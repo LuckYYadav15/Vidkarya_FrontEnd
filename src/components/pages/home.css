@@ -1,0 +1,286 @@
+body {
+  font-family: "Montserrat";
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ /* background-image: url("./images/bground.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.home-bg-box{
+ background-image: url("./images/bground.jpg");
+
+}
+  h2{
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  h6 {
+    font-family: "Montserrat-Bold";
+  }
+  
+  .container-fluid {
+    padding: 0% 6%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:1px solid white;
+  }
+  
+  /*#first-page{
+    background-image: url("./images/bground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }*/
+  
+  /*     N A V B A R     */
+  
+  
+  
+   /*    G E T    S T A R T E D     */
+  
+  #get_started {
+    background-image: url("./images/bground.jpg");
+    background-attachment: fixed;
+    /* background-color:blueviolet; */
+    z-index: 2;
+    /* min-height: 100vh; */
+  }
+  
+  #getstarted_box { 
+    background: url('./svg/waves.svg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    z-index: 4;
+    min-height: 100vh;
+  }
+  
+  #content {
+    padding: 6.25rem 10rem 1.25rem 10rem;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  #getstarted_btn {
+    color: white;
+    /* font-weight: bold; */
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.2s ease-in;
+  }
+  #getstarted_btn:hover {
+    color: black;
+    background-color:whitesmoke;
+    transform: scale(1.05);
+  }
+  
+   /*    E L E M E N T S     */
+  .pg-heading {
+    color: white;
+    padding: .5rem;
+    font-weight:400;
+  }
+  
+  .feature-icon {
+    width: 150px;
+    height: 150px;
+    padding:1%;
+    transition: all 0.3s ease-in;
+  }
+  
+  .feature-icon:hover {
+    transform: scale(1.05);
+  }
+  
+  .features
+  {
+    color:#222831;
+    margin-left: 9%;
+    padding-top: 3%;
+    width: 30%;
+    padding-left: 5%;
+    transition: all 0.3s ease-in;
+    padding-bottom:3%;
+  }
+  .features:hover{
+    transform: scale(1.1);
+    color: #fff;
+  }
+  
+  #links {
+    margin-left: auto;
+    margin-right: 15%;
+    text-align: right;
+  }
+  /* #mentors
+  {
+    padding-left: 0%;
+    margin-left: 8%;
+  } */
+   /*   V I S I O N    */
+  .vision-features
+  {
+    padding-top: 3%;
+    color: #FF2E63;
+  }
+  
+  #vision-heading {
+    color: white;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    border-bottom: 0.01rem dotted black;
+    font-size: 3rem;
+    font-weight:lighter;
+  }
+  
+  #vision
+  {
+    text-align: center;
+    background-color: rgba(67,0,93);
+    color:#FF2E63;
+    margin:1rem .5rem;
+    border-radius: 1.5rem;
+    height: 100%;
+  }
+  .testimonial-image
+  {
+    padding-top: 2rem;
+    width: 15%;
+    margin: 20px;
+  }
+  
+  .carousel-item
+  {
+      padding:7% 15%;
+  }
+  
+  /*    F O O T E R    */
+  
+  #elements{
+    background-image: url('./images/bground.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+   #vision button:focus{
+    background-color: rgba(67,0,93,0.6) !important;
+  }
+  #vision span{
+    background-color: rgba(67,0,93,0.6);
+  }
+  
+  /* ----for responsiveness------ */
+  /* in mobile screens */
+  @media screen and (max-width: 450px) {
+  
+    #content {
+      padding: 3.25rem 5rem 1.25rem 5rem;
+    }
+    .features{
+      width: 50%;
+    }
+    #links {
+      text-align: center;
+    }
+  
+    #elements {
+      transform: scale(0.85);
+    }
+  
+    #notes {
+      margin-top: -1%;
+      margin-left: 0%;
+    }
+  
+    #links {
+      margin-left: auto;
+      margin-right: 0%;
+      text-align: center;
+    }
+  
+    #mentors {
+      padding-left: 0%;
+    }
+  
+    #navnav {
+      transform: scale(0.94);
+    }
+    .web-icon {
+      margin-left: -3%;
+    }
+    #brandtext {
+      margin-right: 1%;
+    }
+  
+    #menubutton {
+      margin-right: -5%;
+    }
+    .pg-heading
+      {
+        margin-left: 30%;
+        color: #fff; 
+        margin-left: 3.8%;      
+        margin-bottom: -18px;      
+      }
+  
+    .welcome-para
+    {
+      margin-left: -40px;
+      margin-right: -40px;
+    }  
+  
+      .feature-icon
+      {
+        transform: scale(0.78);
+      }
+      
+      .feature-icon:hover
+      {
+        transform: scale(0.85);
+      }
+  
+    .vision-text {
+      font-size: 1.1rem;
+    }
+  
+    #vision-heading {
+      transform: scale(0.7);
+      margin: -5%;
+      text-align: center;
+    }
+    #vision
+    {
+      transform: scale(0.99);
+      border: 0.5px solid wheat;
+      border-radius: 2%;
+    }
+  }
+  
+  /* tablets */
+  @media screen and (max-width: 1025px) and (min-width: 765px) {
+    #links {
+      text-align: center;
+    }
+  
+    /* for svg wave  */
+    #getstarted_box {
+      min-height: 63vh;
+    }
+    .pg-heading
+    {
+      margin-left: 30%;
+      color: #fff; 
+      margin-left: 3.8%;      
+      margin-bottom: -15px;
+     
+    }
+    #mentors
+    {
+      margin-left: 70px;
+    }
+   
+  }

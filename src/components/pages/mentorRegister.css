@@ -1,0 +1,117 @@
+/* .main-container{
+  background: url("./images/bground.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+  max-height: 100%;
+  color: white;
+} */
+.title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2em 1em 0em 1em;
+}
+.main-container {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  height: 85%;
+  padding: 2em 1em;
+  align-items: center;
+  justify-content: center;
+}
+.mentor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.3s;
+  width: 500px;
+  backdrop-filter: blur();
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+.field {
+  margin-top: 50px;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.field span{
+  letter-spacing: 1;
+  pointer-events: none;
+  z-index: 3;
+  position: absolute;
+  transition: 0.3s ease-in;
+  top:50%;
+  transform: translateY(-50%);
+  left:12.5%;
+  color: #fff;
+}
+.field input:focus~ span,.field input:valid~span,.field input:not(:placeholder-shown)~span{
+  top:-20px;
+}
+
+.field input:focus ~ span,
+.field input:valid ~ span,
+.field input:not(:placeholder-shown) ~ span {
+  top: -10px;
+}
+.field input {
+  padding: 10px;
+  height: 40px;
+  width: 80%;
+  color: #fff;
+  /* background: rgba(255, 255, 255, 0.05); */
+  box-shadow: 0 5px 15px rgb(0 0 0 / 5%), 0 10px 17.5px rgb(0 0 0 / 5%);
+  background-color: transparent;
+  /* border-radius: 10px; */
+  outline: 0px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+}
+.button-form {
+  margin: 20px;
+  border-radius: 20px;
+}
+#btn-mentor {
+  color: #666;
+  border: 2px solid #666;
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 30px;
+  border: solid 2px white;
+  transition: 0.3s;
+}
+#btn-mentor:hover {
+  background-color: transparent;
+  color: white;
+  transform: scale(1.01);
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+  .mentor-container {
+    width: 450px;
+  }
+  .field {
+    width: 100%;
+  }
+  .field input {
+    width: 85%;
+  }
+}

@@ -1,0 +1,282 @@
+import React from 'react'
+
+export default function Table() {
+    return (
+        <>
+        <tr>
+          <th scope="row" className="row" id="">
+            Monday
+          </th>
+          <td>
+            {" "}
+            <a
+              href="https://meet.google.com/syv-gket-gno"
+              target="blank"
+            >
+              MA201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/qfw-wbgu-iyn"
+              target="blank"
+            >
+              CS201(A){" "}
+            </a>
+            /{" "}
+            <a
+              href="https://meet.google.com/yqv-jbnz-ebt"
+              target="blank"
+            >
+              CS201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/hdj-neib-qju"
+              target="blank"
+            >
+              ISP
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202
+            </a>
+          </td>
+          <td>LUNCH</td>
+          <td>
+            <a
+              href="https://meet.google.com/mjc-masg-rqy"
+              target="blank"
+            >
+              CS208(Lab)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/mjc-masg-rqy"
+              target="blank"
+            >
+              CS208(Lab)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" className="row" id="">
+            Tuesday
+          </th>
+          <td>
+            <a
+              href="https://meet.google.com/qfw-wbgu-iyn"
+              target="blank"
+            >
+              CS201(A){" "}
+            </a>
+            /{" "}
+            <a
+              href="https://meet.google.com/yqv-jbnz-ebt"
+              target="blank"
+            >
+              CS201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/yen-eqwg-guv"
+              target="blank"
+            >
+              MA201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202
+            </a>
+          </td>
+          <td>
+            <a href="#" target="_blank">
+              CS207
+            </a>
+          </td>
+          <td>LUNCH</td>
+          <td>
+            <a
+              href="https://meet.google.com/hdj-neib-qju"
+              target="blank"
+            >
+              ISP
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/qfw-wbgu-iyn"
+              target="blank"
+            >
+              CS201(A){" "}
+            </a>
+            /{" "}
+            <a
+              href="https://meet.google.com/yqv-jbnz-ebt"
+              target="blank"
+            >
+              CS201(B)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" className="row" id="">
+            Wednesday
+          </th>
+          <td>
+            {" "}
+            <a href="#" target="_blank">
+              CS207
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/hdj-neib-qju"
+              target="blank"
+            >
+              ISP
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/ruy-kdhf-qee"
+              target="blank"
+            >
+              MA201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/upg-yoss-nkc"
+              target="blank"
+            >
+              CS208
+            </a>
+          </td>
+          <td>LUNCH</td>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202(Lab)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202(Lab)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" className="row" id="">
+            Thursday
+          </th>
+          <td>
+            <a
+              href="https://meet.google.com/upg-yoss-nkc"
+              target="blank"
+            >
+              CS208
+            </a>
+          </td>
+          <td>
+            {" "}
+            <a
+              href="https://meet.google.com/tsd-xxdx-wjr"
+              target="_blank"
+            >
+              CS207
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/qfw-wbgu-iyn"
+              target="blank"
+            >
+              CS201(A){" "}
+            </a>
+            /{" "}
+            <a
+              href="https://meet.google.com/yqv-jbnz-ebt"
+              target="blank"
+            >
+              CS201(B)
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202
+            </a>
+          </td>
+          <td>LUNCH</td>
+          <td>
+            <a href="#" target="blank">
+              CS207(Lab)
+            </a>
+          </td>
+          <td>
+            <a href="#" target="blank">
+              CS207(Lab)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" className="row" id="">
+            Friday
+          </th>
+          <td>
+            <a
+              href="https://meet.google.com/snn-dzxf-ngd"
+              target="blank"
+            >
+              CS202
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://meet.google.com/upg-yoss-nkc"
+              target="blank"
+            >
+              CS208
+            </a>
+          </td>
+          <td>
+            <a href="#">-</a>
+          </td>
+          <td>
+            <a href="#">-</a>
+          </td>
+          <td>LUNCH</td>
+          <td>
+            <a
+              href="https://meet.google.com/pvm-ramp-ddc"
+              target="_blank"
+            >
+              MA201(B)
+            </a>
+          </td>
+          <td>
+            <a href="#">-</a>
+          </td>
+        </tr>
+      </>
+    )
+}

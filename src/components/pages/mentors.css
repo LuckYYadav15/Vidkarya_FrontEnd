@@ -1,0 +1,139 @@
+#mentorbox{
+  width: 100vw;
+  max-width: 100%;
+}
+.mentor-heading
+{
+  text-align: center !important;
+  /* font-family: sans-serif; */
+  font-weight: normal;
+  font-size: 3rem;
+  /* color: white; */
+  transition: all 0.3s ease-in-out;
+}
+
+.mentor-heading h1:hover
+{
+  transform: scale(1.1);
+  color: #fff;
+}
+#mentorbox {
+    padding: 1rem;
+    background-image: url("./images/bground.jpg");
+    background-size: cover;
+}
+.row {
+    padding: 1%;
+}
+.mentorpic {
+    /* transform: scale(0.5); */
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mentor-cards {
+    border-radius: 14px;
+    /* margin: 0.4rem; */
+    box-shadow: 2px 2px 5px black;
+    padding: 2rem 0rem 0rem 0rem;
+    transition: all 0.5s ease-in;
+    /* background-image: url('../images/card-bg.png'); */
+    background-color: rgb(252, 220, 209);
+    transform: scale(0.9);
+}
+
+.mentor-cards .card-body:last-of-type{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.mentor-cards .card-body .btn{
+  min-width: 75px;
+  max-width:125px;
+}
+.mentor-cards h5{
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+.mentor-cards p{
+  color: black;
+}
+.mentor-cards:hover {
+    transform: scale(1.0001);
+    box-shadow: 8px 8px 8px black;
+    z-index: 10;
+}
+.list-text
+{
+  background-color: rgb(252, 220, 209);
+}
+.card
+{
+    display:inline-block;
+}
+
+.github-icon
+{
+    float: right;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.github-icon:hover
+{
+    transform: scale(1.1);
+}
+.meet-icon
+{
+    float: right;
+    transition: all 0.3s ease-in-out;
+}
+.meet-icon:hover
+{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 450px) {
+    .mentor-heading
+    {
+      /* color: #fff;   */
+      pointer-events: none;
+      padding-top: 0px;
+      margin-bottom: -22px;
+    }    
+    .mentor-cards {
+        padding-top: 20px;
+        transform: scale(0.8);        
+    }
+
+    .mentor-cards {
+      border-radius: 14px;
+      /* margin: 0.4rem; */
+      box-shadow: 2px 2px 5px black;
+      transition: all 0.5s ease-in;
+      /* background-image: url('../images/card-bg.png'); */
+      /* background-color: rgb(252, 220, 209); */
+      transform: scale(0.8);
+  }
+  
+  .mentor-cards:hover {
+      transform: scale(0.87);
+      box-shadow: 8px 8px 8px black;
+      z-index: 10;
+  }
+  .main{
+    flex-direction: column;
+  }
+  #mentor-box .card-title
+   {
+    font-weight: bold;
+   }
+}
+@media screen and (max-width:768px) and (min-width:450px){
+    .col{
+      max-width: 500px !important;
+    }
+}

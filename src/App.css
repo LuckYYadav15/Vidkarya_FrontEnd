@@ -1,0 +1,73 @@
+.card1{
+    height: 10rem;
+     cursor: pointer;
+     background-color: #ff5b67;
+     transition: all 0.5s;
+     border-radius: 3%;
+   }
+   #root{
+    background: url('./components/pages/images/bground.jpg');
+     background-size: cover;
+     min-height: 100vh;
+   }
+   .div{
+     display: flex;
+     justify-content: center;
+   }
+   .pdf-preview{
+     height: 800px;
+     width: 1000px;
+     background-color: transparent;
+   
+   }
+   .pdf-overview{
+     position: absolute;
+     z-index: 65;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: #252424b0;
+   }
+   .react-pdf__Document{
+     margin-left: .5rem;
+   
+   }
+   .fa-file-pdf{
+   color: red;
+   }
+  
+   .branches-btns .btn{
+        width: 25%;
+        background-color: #f61b66;
+   }
+   .link-subjects-box{
+     width: 90%;
+   }
+   
+   .branches-tolink-btns .btn{
+    width: 80%;
+    background-color: #f61b66;
+   }
+   
+   @media  (max-width:400px) {
+    .pdf-preview{
+     
+      overflow: scroll;
+    
+      height: 400px;
+      width: 380px;
+      background-color: transparent;
+    
+    
+     
+    }
+   }
+   
+   
+   
+
+
+
+
+   

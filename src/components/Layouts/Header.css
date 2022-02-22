@@ -1,0 +1,196 @@
+body {
+  font-family: "Montserrat";
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+.container-fluid {
+  padding: 0% 6%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
+
+/*     N A V B A R     */
+
+#navnav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 0px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 100% !important;
+  width: 100vw !important;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 550;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.nav-item {
+  padding: 0 10px;
+  transition: all 0.3s ease-in;
+}
+.nav-item:hover {
+  transform: scale(1);
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.web-icon {
+  border-radius: 50%;
+  margin-right: 1%;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+#brand-name {
+  transition: all 0.3s ease-in;
+}
+
+#brand-name:hover {
+  transform: scale(1.1);
+}
+
+#slogan1 {
+  font-family: cursive;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.dropdown_menu {
+  background-color: rgba(254, 68, 101, 0.8) !important;
+  border-radius: 0.6rem;
+  backdrop-filter: blur(45px);
+  right: 20px;
+  position: relative;
+}
+
+.dropdown-item {
+  color: whitesmoke;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+li i {
+  color: white;
+  font-weight: 400;
+  padding: 0px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .profile span:nth-child(1) {
+    display: none;
+  }
+  .profile span:nth-child(2) {
+    display: initial;
+  }
+}
+@media screen and (max-width: 992px) {
+  .profile span:nth-child(1) {
+    display: initial;
+  }
+  .profile span:nth-child(2) {
+    display: none;
+  }
+}
+
+/* ----for responsiveness------ */
+/* in mobile screens */
+@media screen and (max-width: 450px) {
+  #content {
+    padding: 3.25rem 5rem 1.25rem 5rem;
+  }
+  .container-fluid img {
+    transform: scale(0.75);
+  }
+  .container-fluid a {
+    transform: scale(0.9);
+  }
+  /* #navnav {
+    transform: scale(0.94);
+  } */
+  .web-icon {
+    margin-left: -3%;
+  }
+  #brandtext {
+    margin-right: 1%;
+  }
+
+  #menubutton {
+    margin-right: -5%;
+  }
+  .pg-heading {
+    margin-left: 30%;
+    color: #fff;
+    margin-left: 3.8%;
+    margin-bottom: -22px;
+    padding-top: 0%;
+  }
+
+  .feature-icon {
+    transform: scale(0.78);
+  }
+
+  .feature-icon:hover {
+    transform: scale(0.85);
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1025px) and (min-width: 765px) {
+  #links {
+    text-align: center;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.links-heading {
+  margin-left: 41.5%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  padding-top: 1%;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.links-heading:hover {
+  transform: scale(1.1);
+  /* margin-left: 40%; */
+}
+
+#link_box {
+  width: fit-content;
+}
+
+a {
+  color: white;
+}
+
+.main-header {
+  background: none;
+}

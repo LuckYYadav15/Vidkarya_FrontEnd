@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+/* N O T E S  P A G E*/
+.branch h1 {
+  text-align: center;
+  padding: 15px;
+  z-index: 1;
+}
+.branch h1 {
+  padding: 30px 15px 15px 15px;
+}
+.notes-selection h5 {
+  position: absolute;
+  left: 10px;
+  z-index: 2;
+}
+.buttons {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fe1f66;
+  border-radius: 10px;
+  padding: 0px;
+  margin: auto;
+  width: fit-content;
+}
+.head-btn {
+  background-color: #fe1f66;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  margin: 0px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+.head-btn:first-of-type {
+  margin-left: 0px;
+}
+.head-btn:last-of-type {
+  margin-right: 0px;
+}
+.head-btn:focus {
+  background-color: white;
+  color: #fe1f66;
+  font-weight: 500;
+  transform: scaleX(1.01);
+}
+.label-name {
+  position: absolute;
+  right: -125px;
+}
+.label-name select {
+  color: white;
+  background-color: #fe1f66;
+  padding: 10px;
+  border-radius: 10px;
+}
+.chapters p:first-of-type {
+  text-align: right;
+}
+.chapter-card .chapter-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+}
+.chapters {
+  border: 2px outset #fe1f66;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px black, 0.75px 0.75px black;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #fe1f66;
+  transition: 0.2s;
+}
+
+.chapters .chapter-teacher {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.chapters:hover {
+  transform: scale(1.05);
+}
+.chapters:active {
+  border: 2px solid white;
+}
+.chapter-card {
+  margin: 25px auto;
+  padding: 1rem 0rem;
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+}
+.notes-selection {
+  padding-bottom: 1rem;
+  min-height: 60vh;
+}
+.isactive{
+  background-color: white;
+  color: #fe1f66;
+}
+.notactive{
+  background-color: #fe1f66;
+  color: white;
+}
+.notes-selection ::-webkit-scrollbar {
+  appearance: none;
+  height: 10px;
+  transition: 0.3s;
+}
+.notes-selection ::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 20px;
+}
+.notes-selection ::-webkit-scrollbar-thumb {
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fe1f66;
+}
+.notes-selection ::-webkit-scrollbar-track:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 750px) and (min-width: 300px) {
+  .branch h1 {
+    position: relative;
+    right: 30px;
+  }
+  .chapter-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .chapters {
+    flex-basis: 200px;
+    width: 90%;
+    margin: 10px auto;
+
+    position: relative;
+    height: fit-content;
+  }
+  .label-name {
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+  }
+  .head-btn {
+    margin: 0px;
+  }
+  .chapters p:first-of-type {
+    text-align: right;
+    position: relative;
+  }
+}
+@media screen and (min-width: 300) and (max-width: 450) {
+  .navbar-brand {
+    margin: 0rem;
+  }
+
+  .chapters {
+    width: 300px;
+    margin: 0px;
+  }
+
+  #brand-text {
+    margin: 0px !important;
+  }
+  .notes-selection h5 {
+    position: initial;
+    text-align: center;
+  }
+}

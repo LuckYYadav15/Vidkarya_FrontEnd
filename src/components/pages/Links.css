@@ -1,0 +1,292 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#first-page{
+  background-image: url('images/bground.jpg');
+  background-size: cover;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+marquee{
+  margin-top : 5px ;
+  background-color: #fe1f66;
+  padding: 16px 5px;
+}
+.day-tab{
+display: none;
+}
+.mentor-heading
+{
+margin-left: 41.5%;
+text-align: center;
+font-family: sans-serif;
+font-weight: lighter;
+font-size: 3.5rem;
+padding-top: 2%;
+transition: all 0.3s ease-in-out;
+}
+.mentor-heading:hover
+{
+transform: scale(1.1);
+color: #fff;
+}
+
+
+
+/*C H A N G E S*/
+body,a,span,select{
+color: white;
+}
+button:focus{
+background-color: white !important;
+color: #fe1f66 !important;
+}
+#tasks-and-info{
+margin: auto;
+padding: 10px;
+justify-content: space-around !important;
+}
+
+#link-box{
+width: 100vw;
+max-width: 100%;
+}
+#link-box div{
+  display: flex !important;
+}
+.alert{
+justify-content: center;    /*GMAIL AND CLASSROOM IMAGE ADJUST*/
+display: flex;              /*change*/
+margin: auto;               /*change*/
+}
+
+tbody th{
+margin: auto !important;   /*DAYS MARGIN CORRECTION*/
+}
+.link-header{
+display: flex;
+align-items: center;            /*LINKS HEADING*/
+justify-content: center;
+height: 100px;
+margin: auto;
+}
+
+img{
+  text-shadow: 1px 1px white;
+}
+
+.label-name1{
+color: white;
+padding:0px 10px;
+}
+
+.label-name1 select{
+background-color: #fe1f66;
+padding: 10px;
+border-radius: 10px;
+}
+
+
+#day-select{
+display: none;
+}
+/*T A B L E D E S I G N + M O B I L E V I E W*/
+@media screen and (min-width:300px) and (max-width:1000px){
+table{
+  width: 100vw;  
+  border-collapse: collapse;
+}
+td,tbody{
+  display: block;
+  border: none;
+}
+#sec-select,thead{
+ display: none;
+}
+tbody{
+  width:100%;
+  border: none !important;
+}
+tr{
+ display: inline-block;
+ border: 1px solid black;
+ width: 100%;
+ padding:0px 20px;
+ height: 500px;
+}
+tbody th,td{
+  border: none;
+  position: relative;
+  padding: 30px 0px 0px 50% !important;
+}
+td::before,th::before{
+  position:absolute;
+  left: 0;
+}
+/* td::after,th::after{
+ color: white;
+ position:absolute;
+ right: 50px;
+ left:70%;
+ text-align: left;
+} */
+td:nth-of-type(1):before { content: "9:00AM - 9:45AM"; }
+td:nth-of-type(2):before { content: "10:00AM - 10:45AM"; }
+td:nth-of-type(3):before { content: "11:00AM - 11:45AM"; }
+td:nth-of-type(4):before { content: "12:00AM - 12:45AM"; }
+td:nth-of-type(5):before { content: "12:45PM - 1:15PM";}
+td:nth-of-type(6):before { content: "1:15PM - 2:00PM"; }
+td:nth-of-type(7):before { content: "2:00PM - 2:45PM"; }
+th::before{content:"Time" ;}
+}
+#footer{
+  margin: auto !important;
+}
+@media screen and (max-width: 340px){
+.dropdowns{
+  padding:0px;
+  margin-top: 10px;
+}
+.link-header{
+  display: inline-block;
+}
+tr,th{
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
+}
+}
+
+/* T A B D E S I G N*/
+@media screen and (max-width: 1000px) and (min-width:300px){
+.mentor-heading
+{
+  margin: auto;
+  color: #fff;     
+  pointer-events: none;   
+  position: relative;
+  bottom: 40px;
+}
+.day-tab{
+  display: inline-block;
+}
+#tasks-and-info{
+  flex-direction: column;
+}
+
+.label-name1{
+  margin: 5px;
+  align-items: center;
+}
+.label-name1 SPAN{
+  margin:0px 5px;
+} 
+.link-header{
+  /* justify-content: space-between; */
+  justify-content: center;
+  flex-direction: row;
+}
+.link-header h1{
+  position: initial;
+  padding: 0px;
+}
+#tasks-and-info .col{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+thead,tbody .row{
+  display: none;
+}
+.day-tab{
+  position: absolute;
+  width: 20%;
+  height: 500px;
+  padding: 10px 0px;
+}
+.day-tab>.label-name1{
+  min-width: 100px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  height: 99%;
+  margin: auto;
+}
+#day-select-tab{
+  background-color: #fe1f66;
+  border-radius: 20px;
+}
+
+.label-name1 button{
+  height:15%;
+  width: 99%;
+  min-width: 100px;
+  border: none;
+  border-radius:20px;
+  margin: auto;
+  background-color: transparent;
+  color: white;
+}
+tr{
+  position: relative;
+  left:20%;
+  width:80% !important;
+}
+}
+
+/* M O B I L E  D E S I G N A D J U S T M E N T S*/
+@media screen and (max-width:600px){
+.link-header{
+  /* height: 175px; */
+  height: 125px;
+}
+.label-name1{
+  
+  align-items: center;
+  flex-direction: column;
+}
+.alert>img{
+  height: 30px;
+  width: 30px;
+}
+.day-tab{
+  display: none;
+}
+.link-header>h1{
+  margin:auto;             /*heading margin correction*/
+} 
+.link-header{
+justify-content:center;
+flex-direction: column;
+}
+tbody div{
+  width: 100%;
+}
+tr{
+  position: static;
+  display: inline-block;
+  width: 100% !important;
+} 
+td,th{
+  padding-left: 50% !important;   
+  width: 100%;                  /*single-column*/
+  margin: auto !important;
+
+}
+#day-select{
+  display: inline-block;    /*days button adjust*/
+  /* width: 100px; */
+  width: 125px;
+  } 
+.dropdowns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
