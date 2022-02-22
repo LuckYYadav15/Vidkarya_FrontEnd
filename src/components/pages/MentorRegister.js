@@ -45,7 +45,7 @@ export default function MentorRegister() {
     //console.log(mentorData);
 
     try {
-      const res = await axios.post("http://localhost:5000/mentor/register", {
+      const res = await axios.post("https://vidkarya-backend.herokuapp.com/mentor/register", {
         name,
         email,
         mentorId,
