@@ -59,7 +59,7 @@ export default function Auth() {
       return;
     }
     try {
-      const res = await axios.post("https://vidkarya-backend.herokuapp.com/login", {
+      const res = await axios.post("https://vidkarya-backend.herokuapp.com/user/login", {
         email,
         password,
       });
