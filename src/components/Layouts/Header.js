@@ -43,12 +43,12 @@ const Header = () => {
       <section>
         <nav className="navbar navbar-expand-lg navbar-dark" id="navnav">
           <div className="container-fluid">
-            <img
+            {/* <img
               src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
               alt=""
               width="65"
               className="web-icon d-inline-block align-text-top"
-            />
+            /> */}
             <a className="heading navbar-brand ms-1" id="brandtext" href="/">
               <div id="brand-name" href="homepage.html">
                 Vidkarya
