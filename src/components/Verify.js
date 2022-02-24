@@ -12,33 +12,33 @@ export default function Verify() {
   const { userId ,reason } = queryString.parse(search);
   console.log(userId);
  
-  useEffect(() => {
-    const verifyUser = async () => {
-      try {
-        const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
-          userId,reason
-        });
-        console.log(data);
-        if (data) {
-          localStorage.setItem("userInfo", JSON.stringify(data));
+  // useEffect(() => {
+  //   const verifyUser = async () => {
+  //     try {
+  //       const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
+  //         userId,reason
+  //       });
+  //       console.log(data);
+  //       if (data) {
+  //         localStorage.setItem("userInfo", JSON.stringify(data));
           
-          console.log("verified sucessfully");
-          toast.success("verification succesfull you can visit the website now")
-          navigate("/auth");
-        } else {
-          console.log("error... in response data");
-          toast.error("error in varification try again!!")
-          //navigate("/auth");
-        }
-      } catch (error) {
-        console.log("error in varification ", error.message);
-        toast.error("error in varification try again!!") 
-        //navigate("/auth");
-      }
-    };
+  //         console.log("verified sucessfully");
+  //         toast.success("verification succesfull you can visit the website now")
+  //         navigate("/auth");
+  //       } else {
+  //         console.log("error... in response data");
+  //         toast.error("error in varification try again!!")
+  //         //navigate("/auth");
+  //       }
+  //     } catch (error) {
+  //       console.log("error in varification ", error.message);
+  //       toast.error("error in varification try again!!") 
+  //       //navigate("/auth");
+  //     }
+  //   };
 
-    verifyUser();
-  }, []);
+  //   verifyUser();
+  // }, []);
 
   return (
     <div>
