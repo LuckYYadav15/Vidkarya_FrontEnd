@@ -107,7 +107,7 @@ export default function Auth() {
       if (res) {
         console.log(res);
         toast.info(
-          "verification emailvsent to your registered email address !!"
+          "verification mail sent to your registered email!!"
         );
         setuserSignupInfo({
           userName: "",
@@ -138,7 +138,7 @@ export default function Auth() {
       })
 
       if(data){
-        toast.info("verification mail sent to your registered email address!!");
+        toast.info("verification mail sent to your registered email!!");
       }else{
       toast.error("error in verification!!");
 
