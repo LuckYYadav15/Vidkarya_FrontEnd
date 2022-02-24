@@ -27,7 +27,7 @@ export default function ResetTemplate() {
 
     }
     try {
-      const { data } = await axios.post("https://vidkarya-backend.herokuapp.com/forgot_password/verification", {
+      const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/forgot_password/verification", {
        userId, password
       });
 

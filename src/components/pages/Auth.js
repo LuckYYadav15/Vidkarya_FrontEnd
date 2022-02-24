@@ -70,7 +70,7 @@ export default function Auth() {
         toast.success(" login successful !!!! ");
       }
     } catch (error) {
-      toast.error("wrong credencials /error in varication try again !!!! ");
+      toast.error("wrong credentials /error in verification try again !!!! ");
     }
   };
 
@@ -85,12 +85,12 @@ export default function Auth() {
     }
     if (password != confirmPassword){
       toast.error(
-        "Confirm Password dosen't Matches"
+        "Confirm Password doesn't matches"
       );
       return;
     }
     if(!email.includes('@iiitdwd.ac.in')){
-      toast.error("enter a valid iiit dharwad email id...");
+      toast.error("Enter a valid IIIT Dharwad email id...");
       return;
 
     }
@@ -107,7 +107,7 @@ export default function Auth() {
       if (res) {
         console.log(res);
         toast.info(
-          "sent the varification email to your registered email address !!"
+          "verification emailvsent to your registered email address !!"
         );
         setuserSignupInfo({
           userName: "",
@@ -128,7 +128,7 @@ export default function Auth() {
 
     const {email} = userLoginInfo;
     if(!email){
-      toast.error("enter the email field please!!");
+      toast.error("Enter the email field please!!");
       return;
     }
 
@@ -138,13 +138,13 @@ export default function Auth() {
       })
 
       if(data){
-        toast.info("varification mail sent to your registered email address!!");
+        toast.info("verification mail sent to your registered email address!!");
       }else{
-      toast.error("error in varification!!");
+      toast.error("error in verification!!");
 
       }
     } catch (error) {
-      toast.error("error in varification!!");
+      toast.error("error in verification!!");
       console.log(error.message);
       
     }

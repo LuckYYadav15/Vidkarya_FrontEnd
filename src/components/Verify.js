@@ -15,7 +15,7 @@ export default function Verify() {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const { data } = await axios.post("https://vidkarya-backend.herokuapp.com/verify", {
+        const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
           userId,reason
         });
         console.log(data);
