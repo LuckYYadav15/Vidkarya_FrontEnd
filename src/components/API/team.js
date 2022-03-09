@@ -39,7 +39,7 @@ const team = [
     {
         dev_id: "05",
         dev_name: "Ganji Nithin",
-        Achivement1: "DSAI, 2nd Year.",
+        Achivement1: "CSE, 2nd Year.",
         github: "https://github.com/urstrulynithin",
         linkden:"https://www.linkedin.com/in/ganji-nithin-384940223/",
         image:"images/Nithin.jpeg"
@@ -58,7 +58,7 @@ const team = [
         Achivement1: "CSE, 2nd Year.",
         github: "https://github.com/VivekYadav105",
         linkden:"https://www.linkedin.com/in/vivek-yadav-58357b203",
-        image:"images/Vivek.jpeg"
+        image:"images/Vivek2.jpeg"
     }
         ]
     },

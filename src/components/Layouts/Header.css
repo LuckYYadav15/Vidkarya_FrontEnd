@@ -139,56 +139,12 @@ li i {
   #menubutton {
     margin-right: -5%;
   }
-  .pg-heading {
-    margin-left: 30%;
-    color: #fff;
-    margin-left: 3.8%;
-    margin-bottom: -22px;
-    padding-top: 0%;
-  }
-
-  .feature-icon {
-    transform: scale(0.78);
-  }
-
-  .feature-icon:hover {
-    transform: scale(0.85);
-  }
 }
 
-/* tablets */
-@media screen and (max-width: 1025px) and (min-width: 765px) {
-  #links {
-    text-align: center;
-  }
-}
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
-}
-
-.links-heading {
-  margin-left: 41.5%;
-  text-align: center;
-  font-weight: normal;
-  font-size: 2.5rem;
-  padding-top: 1%;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.links-heading:hover {
-  transform: scale(1.1);
-  /* margin-left: 40%; */
-}
-
-#link_box {
-  width: fit-content;
-}
-
-a {
-  color: white;
 }
 
 .main-header {

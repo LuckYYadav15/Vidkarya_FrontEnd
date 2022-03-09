@@ -62,8 +62,9 @@
     width: 150px;
     height: 150px;
     position: relative;
-  
     top: 20px;
+    object-fit: contain;
+    background-color: transparent;
   }
   .role-heading {
     font-size: larger;
@@ -104,6 +105,9 @@
     margin: 0.5rem;
     border-radius: 20px;
   }
+  .col-sm-6.col-lg-4.teamcards {
+    margin-top: 1rem;
+}
   @media screen and (max-width: 700px) {
     .card-row {
       flex-direction: column;
@@ -112,7 +116,7 @@
       margin: 10px 0px 20px 0px;
     }
     .card-row .card-body {
-      width: 200px;
+      width: 250px;
     }
   }
   @media screen and (max-width: 500px) {

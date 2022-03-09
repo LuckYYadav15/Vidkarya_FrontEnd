@@ -119,7 +119,6 @@
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: 0.3s linear;
-  
   }
   
   .form{
@@ -222,7 +221,14 @@
     background-color: transparent;
     border: 2px solid white;
   }
-
+  .isactive{
+    background-color: white;
+    color: #fe1f66;
+  }
+  .notactive{
+    background-color: #fe1f66;
+    color: white
+  }
   .btns-down button{
     width: fit-content;
   }
@@ -278,14 +284,14 @@
     top:12.5px;
     transform: translate(-10px,-10px);
   }
-  .fa-times{
+  .err-msg .fa-times{
     padding:15px 15px;
     top:20px;
     right:20px;
     transform: translate(20px,-15px);
   }
   .fa-times:hover{
-    color: black;
+    color: #fe1f66;
     background-color:inherit;
   }
 

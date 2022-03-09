@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import queryString from "query-string";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-
+// import "./resetpassword.css"
 export default function ResetTemplate() {
 
 
@@ -27,7 +27,7 @@ export default function ResetTemplate() {
 
     }
     try {
-      const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/forgot_password/verification", {
+      const { data } = await axios.post("http://localhost:5000/forgot_password/verification", {
        userId, password
       });
 
@@ -53,12 +53,12 @@ export default function ResetTemplate() {
           <div className="square"></div>
           <div className="container-box">
             <div className="container-fluid">
-              {/* <img
+              <img
                 src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
                 alt=""
                 width="65"
                 className="web-icon d-inline-block align-text-top"
-              /> */}
+              />
               <a className="heading navbar-brand ms-1" id="brandtext" href="">
                 <div id="brand-name" href="#first-page">
                   <p>Vidkarya</p>
@@ -68,7 +68,7 @@ export default function ResetTemplate() {
                 </div>
               </a>
             </div>
-            <div className="form forgot password">
+            <form className="form forgot password">
               <div className="inputBox">
                 <input
                   className="password"
@@ -96,8 +96,8 @@ export default function ResetTemplate() {
                   Submit
                 </button>
               </div>
-              <i className="fab fa-google"></i>
-            </div>
+              {/* <i className="fab fa-google"></i> */}
+            </form>
           </div>
         </div>
       </section>

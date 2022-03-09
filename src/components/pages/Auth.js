@@ -13,7 +13,6 @@ export default function Auth() {
   useEffect(() => {
     
     if(localStorage.getItem('userInfo')){
-     // console.log("yes");
       navigate('/');
     }
   }, []);
@@ -43,7 +42,6 @@ export default function Auth() {
   const handleSignupChange = (e) => {
     const val = e.target.value;
     const name = e.target.name;
-
     setuserSignupInfo({ ...userSignupInfo, [name]: val });
   };
 
@@ -59,7 +57,7 @@ export default function Auth() {
       return;
     }
     try {
-      const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/login", {
+      const res = await axios.post("http://localhost:5000/user/login", {
         email,
         password,
       });
@@ -70,7 +68,7 @@ export default function Auth() {
         toast.success(" login successful !!!! ");
       }
     } catch (error) {
-      toast.error("wrong credentials /error in verification try again !!!! ");
+      toast.error("wrong credencials /error in varication try again !!!! ");
     }
   };
 
@@ -85,19 +83,19 @@ export default function Auth() {
     }
     if (password != confirmPassword){
       toast.error(
-        "Confirm Password doesn't matches"
+        "Confirm Password doesn't Matches"
       );
       return;
     }
     if(!email.includes('@iiitdwd.ac.in')){
-      toast.error("Enter a valid IIIT Dharwad email id...");
+      toast.error("Enter a valid iiit dharwad email id...");
       return;
 
     }
 
     try {
 
-      const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/sign_up", {
+      const res = await axios.post("http://localhost:5000/user/sign_up", {
         userName,
         email,
         password,
@@ -107,7 +105,7 @@ export default function Auth() {
       if (res) {
         console.log(res);
         toast.info(
-          "verification mail sent to your registered email!!"
+          "sent the varification email to your registered email address !!"
         );
         setuserSignupInfo({
           userName: "",
@@ -128,23 +126,23 @@ export default function Auth() {
 
     const {email} = userLoginInfo;
     if(!email){
-      toast.error("Enter the email field please!!");
+      toast.error("enter the email field please!!");
       return;
     }
 
     try {
-      const {data} = await axios.post("https://vidkarya-backend-98.herokuapp.com/Forgot_Password/email_verify" ,{
+      const {data} = await axios.post("http://localhost:5000/Forgot_Password/email_verify" ,{
         email:userLoginInfo.email
       })
 
       if(data){
-        toast.info("verification mail sent to your registered email!!");
+        toast.info("varification mail sent to your registered email address!!");
       }else{
-      toast.error("error in verification!!");
+      toast.error("error in varification!!");
 
       }
     } catch (error) {
-      toast.error("error in verification!!");
+      toast.error("error in varification!!");
       console.log(error.message);
       
     }
@@ -163,12 +161,12 @@ export default function Auth() {
           <div className="square" />
           <div className="container-box">
             <div className="container-fluid">
-              {/* <img
+              <img
                 src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
                 alt=""
                 width="65"
                 className="web-icon d-inline-block align-text-top"
-              /> */}
+              />
               <a className="heading navbar-brand ms-1" id="brandtext" href="">
                 <div id="brand-name" href="#first-page">
                   <p>Vidkarya</p>
@@ -183,7 +181,7 @@ export default function Auth() {
                 <button className={`btn-lgn ${loginBg}`} onClick={() =>{
                   setisLogin(true);
                   setloginBg("login-active");
-                  
+
                 }}>
                   Log-in
                 </button>

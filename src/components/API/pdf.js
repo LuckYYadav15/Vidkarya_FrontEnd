@@ -5,7 +5,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"Linear Algebra",
       NotesId:"01_CSE_2020_IIITDWD_LA",
-      Showtag :"Author 1",
+      Showtag :"Auther 1",
       fileLink:"https://drive.google.com/file/d/1LA8A10tI9ZCViw3ZmwpJTCVtOmueHRDe/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -15,7 +15,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"Linear Algebra",
       NotesId:"02_CSE_2020_IIITDWD_MATHS",
-      Showtag :"Author 2",
+      Showtag :"Auther 2",
       fileLink:"https://drive.google.com/file/d/1iKUdeRaUXifZ7q9f9IH6OntlXLp4yEwz/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -24,7 +24,7 @@ const samplepdfs = [
       branch:'CSE',
       sem:"4",
       CourseName:"Linear Algebra",
-      Showtag :"Author 3",
+      Showtag :"Auther 3",
       NotesId:"03_CSE_2020_IIITDWD_LA",
       fileLink:"https://drive.google.com/file/d/1Kapt_oWh9MmYwbBi3ggLuBKmQ_67uO7c/preview",
       DateOfUpload:"21-02-2022"
@@ -34,7 +34,7 @@ const samplepdfs = [
       branch:'CSE',
       sem:"4",
       CourseName:"Theory of Computation",
-      Showtag :"Author 1",
+      Showtag :"Auther 1",
       NotesId:"01_CSE_2020_IIITDWD_TOC",
       fileLink:"https://drive.google.com/file/d/1DzgBYhOInEMfOCjH9BoeGyYvXo64ckLo/preview",
       DateOfUpload:"21-02-2022"
@@ -45,7 +45,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"Theory of Computation",
       NotesId:"03_CSE_2020_IIITDWD_TOC",
-      Showtag :"Author 3",
+      Showtag :"Auther 3",
       fileLink:"https://drive.google.com/file/d/1KdfBqyY08DCW4iE_7iHDpVxCwGDgyRBX/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -55,7 +55,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"DBMS",
       NotesId:"01_CSE_2020_IIITDWD_DBMS",
-      Showtag :"Author 1",
+      Showtag :"Auther 1",
       fileLink:"https://drive.google.com/file/d/1LsUM9H5qg4_z0-2t-I7cqekPClQkSBLJ/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -65,7 +65,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"DBMS",
       NotesId:"02_CSE_2020_IIITDWD_DBMS",
-      Showtag :"Author 2",
+      Showtag :"Auther 2",
       fileLink:"https://drive.google.com/file/d/1JzkTXQ-A-MTSnLRbssrj_vbi4-eSLB4d/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -75,7 +75,7 @@ const samplepdfs = [
       sem:"4",
       CourseName:"DBMS",
       NotesId:"03_CSE_2020_IIITDWD_DBMS",
-      Showtag :"Author 3",
+      Showtag :"Auther 3",
       fileLink:"https://drive.google.com/file/d/1KW0F1pkVI5wRfyiTlCmOWRYnf0pHhbLN/preview",
       DateOfUpload:"21-02-2022"
     },
@@ -83,9 +83,9 @@ const samplepdfs = [
       id:'09',
       branch:'CSE',
       sem:"4",
-      CourseName:"Software Engineering",
+      CourseName:"Software Enginering",
       NotesId:"03_CSE_2020_IIITDWD_SE",
-      Showtag :"Author 3",
+      Showtag :"Auther 3",
       fileLink:"https://drive.google.com/file/d/1KbniGVSWRfAky7Llq3phGZfdgy2ze6Xf/preview",
       DateOfUpload:"21-02-2022"
     }

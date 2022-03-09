@@ -42,25 +42,26 @@ export default function Home() {
           <div id="elements">
             <h1 className="text-center pg-heading">Resources</h1>
             <hr />
-            <Link to="/notes">
+
               <div className="col-lg-6 col-md-6 features notes" id="notes">
+              <Link to="/notes">
                 <h1>
-                  <a>
                     <img
                       src={notesImg}
                       alt=""
                       className="feature-icon d-inline-block align-text-top"
                     />
-                  </a>
                   Notes
                 </h1>
+                </Link>
               </div>
-            </Link>
 
-            <Link to="/links">
+
+
               <div className="col-lg-6 features " id="links">
-                <h1 className="features">
-                  Links
+              <Link to="/links">
+                <h1>
+                Links
                   <img
                     src={linkImg}
                     alt=""
@@ -68,12 +69,13 @@ export default function Home() {
                     style={{ height: "115px", width: "115px" }}
                   />
                 </h1>
+                </Link>
               </div>
-            </Link>
 
-            <Link to="/mentors">
+
               <div className="col-lg-6  col-md-6 features" id="mentors">
-                <h1 className="features">
+              <Link to="/mentors">
+                <h1>
                   <img
                     src={mentorImg}
                     alt=""
@@ -82,8 +84,8 @@ export default function Home() {
                   />
                   Mentors
                 </h1>
+                </Link>
               </div>
-            </Link>
           </div>
 
           <div id="vision">
@@ -139,4 +141,3 @@ export default function Home() {
     </>
   );
 }
-  

@@ -30,14 +30,14 @@ export default function PdfPreview({
   return (
     <>
       <div className={`pdf-overview d-${displayPdf ? "block" : "none"}`}>
-        <div className="mt-2 pdf-nav">
-          <div className="col-1">
-            <button className="btn text-white " onClick={handleCancelPdfShow}>
-              X
+        <div className="pt-2 pdf-nav">
+          <div className="d-flex">
+            <button className="cross-button text-white ml-auto" onClick={handleCancelPdfShow}>
+            <i class="fas fa-times"></i>
             </button>
           </div>
-          <div className="col d-flex">
-            <h6 className=" my-2 text-white d-inline">{pdfSrc.NotesId}</h6>
+          <div className="d-flex">
+            <h6 className=" my-2 text-white d-inline mx-auto h4">{pdfSrc.NotesId}</h6>
           </div>
         </div>
         <div className="d-flex justify-content-center">
@@ -45,7 +45,6 @@ export default function PdfPreview({
             {/* <embed src={pdfFile} width="800px" height="2100px" /> */}
             <iframe
               src = {pdfSrc.fileLink}
-              width="1000"
               height="600"
               allow="autoplay"
             ></iframe>

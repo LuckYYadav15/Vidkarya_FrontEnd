@@ -14,21 +14,49 @@
      display: flex;
      justify-content: center;
    }
-   .pdf-preview{
-     height: 800px;
-     width: 1000px;
-     background-color: transparent;
-   
-   }
    .pdf-overview{
+    position: relative;
+    z-index: 65;
+    height: 100vh;
+    max-width: 100%;
+    width: 100vw;
+    max-height:100%;
+    background-color: #252424b0;
+  }
+  .pdf-overview>div:nth-of-type(2){
+    height: 100%;
+    width: 100%;
+  }
+   .pdf-preview{
      position: absolute;
-     z-index: 65;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background-color: #252424b0;
+     /* max-height: 100vh; */
+     width: 80%;
+     max-width: 1000px;
+     height: 90%;
+     background-color: transparent;
    }
+   .pdf-preview iframe{
+    width: 100%;
+   }
+   .cross-button{
+     margin-left: auto;
+     margin-right:20px;
+     display: flex;
+     border: 2px solid white;
+     align-self: center;
+     border-radius: 10px;
+     background-color: transparent;
+   }
+   .cross-button:hover{
+     background-color: white;
+     color: #f61b66;
+   }
+   .cross-button .fas{
+     color: white;
+     padding: 10px;
+     font-size: 16px;
+   }
+
    .react-pdf__Document{
      margin-left: .5rem;
    
