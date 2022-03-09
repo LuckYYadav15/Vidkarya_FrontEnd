@@ -58,7 +58,7 @@ const team = [
         Achivement1: "CSE, 2nd Year.",
         github: "https://github.com/VivekYadav105",
         linkden:"https://www.linkedin.com/in/vivek-yadav-58357b203",
-        image:"images/Vivek2.jpeg"
+        image:"images/Vivek.jpeg"
     }
         ]
     },
