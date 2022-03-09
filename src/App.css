@@ -37,6 +37,7 @@
    }
    .pdf-preview iframe{
     width: 100%;
+    height: 80vh;
    }
    .cross-button{
      margin-left: auto;
