@@ -15,7 +15,7 @@ export default function Verify() {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
+        const { data } = await axios.post("http://vidkarya-backend-98.herokuapp.com/verify", {
           userId,reason
         });
         console.log(data);
@@ -27,12 +27,12 @@ export default function Verify() {
           navigate("/auth");
         } else {
           console.log("error... in response data");
-          toast.error("error in varification try again!!")
+          toast.error("error in verification try again!!")
           //navigate("/auth");
         }
       } catch (error) {
-        console.log("error in varification ", error.message);
-        toast.error("error in varification try again!!") 
+        console.log("error in verification ", error.message);
+        toast.error("error in verification try again!!") 
         //navigate("/auth");
       }
     };
