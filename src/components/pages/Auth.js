@@ -57,7 +57,7 @@ export default function Auth() {
       return;
     }
     try {
-      const res = await axios.post("http://localhost:5000/user/login", {
+      const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/login", {
         email,
         password,
       });
@@ -95,7 +95,7 @@ export default function Auth() {
 
     try {
 
-      const res = await axios.post("http://localhost:5000/user/sign_up", {
+      const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/sign_up", {
         userName,
         email,
         password,
@@ -131,7 +131,7 @@ export default function Auth() {
     }
 
     try {
-      const {data} = await axios.post("http://localhost:5000/Forgot_Password/email_verify" ,{
+      const {data} = await axios.post("https://vidkarya-backend-98.herokuapp.com/Forgot_Password/email_verify" ,{
         email:userLoginInfo.email
       })
 
