@@ -111,7 +111,7 @@ const team = [
         Achivement1: "CSE, 2nd Year.",
         github: "https://github.com/Tarunvats9068",
         linkden:"https://www.linkedin.com/in/tarun-sharma-4a2763207/",
-        image:"images/tarun.jpeg"
+        image:"images/Tarun.jpeg"
     }
         ]
     }
