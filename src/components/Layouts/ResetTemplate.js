@@ -44,8 +44,8 @@ export default function ResetTemplate() {
 
   return (
     <>
-      <auth-section>
-        <div className="auth-box">
+      <section className="auth-section">
+        <div className="box auth-box">
           <div className="square"></div>
           <div className="square"></div>
           <div className="square"></div>
@@ -100,7 +100,7 @@ export default function ResetTemplate() {
             </div>
           </div>
         </div>
-      </auth-section>
+      </section>
       <ToastContainer position="top-center"/>
 
     </>

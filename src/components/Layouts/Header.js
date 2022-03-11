@@ -130,7 +130,7 @@ const Header = () => {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                  >Dashboard
+                  >
                     <span className="text">profile</span>
                     <span className="image">
                       <img src={dp} />
