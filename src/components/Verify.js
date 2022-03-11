@@ -16,6 +16,7 @@ export default function Verify() {
     const verifyUser = async () => {
       console.log("HI From FrontEnd");
       try {
+        console.log("HI fro FrontEnd TRy");
         const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
           userId,reason
         });
