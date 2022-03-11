@@ -14,10 +14,12 @@ export default function Verify() {
  
   useEffect(() => {
     const verifyUser = async () => {
+      console.log("HI From FrontEnd");
       try {
         const { data } = await axios.post("http://vidkarya-backend-98.herokuapp.com/verify", {
           userId,reason
         });
+        console.log("2 Hi From FrontEnd")
         console.log(data);
         if (data) {
           localStorage.setItem("userInfo", JSON.stringify(data));
