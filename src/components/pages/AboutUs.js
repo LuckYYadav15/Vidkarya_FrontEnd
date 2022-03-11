@@ -21,7 +21,7 @@ export default function AboutUs() {
               AboutUS
             </div>
             <p className="card-title">
-              We are group of students from IIIT Dharwad, 202o-24 batch. The
+              We are group of students from IIIT Dharwad, 2020-24 batch. The
               project aims to provide students access to necessary support
               during their Engineering journey.
             </p>
