@@ -63,7 +63,7 @@
     height: 150px;
     position: relative;
     top: 20px;
-    object-fit: contain;
+    /* object-fit: contain; */
     background-color: transparent;
   }
   .role-heading {

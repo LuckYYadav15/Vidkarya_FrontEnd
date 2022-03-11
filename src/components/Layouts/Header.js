@@ -78,7 +78,7 @@ const Header = () => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown ms-2">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -122,7 +122,7 @@ const Header = () => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown profile">
+                <li className="nav-item dropdown profile ms-2">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -141,7 +141,7 @@ const Header = () => {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li className="ml-2 profile-name" >
-                      <p className="text-white ml-2">{user.userName}</p>
+                      <p className="text-white ml-2 px-3">{user.userName}</p>
                     </li>
                     <li>
                       <button className="dropdown-item .logout" onClick={handleLogout}>
