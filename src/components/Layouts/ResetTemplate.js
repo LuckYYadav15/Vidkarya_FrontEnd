@@ -68,7 +68,7 @@ export default function ResetTemplate() {
                 </div>
               </a>
             </div>
-            <form className="form forgot password">
+            <div className="form forgot password">
               <div className="inputBox">
                 <input
                   className="password"
@@ -97,7 +97,7 @@ export default function ResetTemplate() {
                 </button>
               </div>
               {/* <i className="fab fa-google"></i> */}
-            </form>
+            </div>
           </div>
         </div>
       </section>
