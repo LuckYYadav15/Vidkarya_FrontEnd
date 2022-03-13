@@ -24,10 +24,30 @@ h6 {
 
 /*     N A V B A R     */
 
-#navnav {
+/* #navnav {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 0px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 100% !important;
+  width: 100vw !important;
+} */
+@supports not ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter:blur(15px))){
+  #navnav{
+    background: rgba( 65, 58, 58, 1);
+    box-shadow: 0 8px 32px 0 rgba(235, 236, 243, 0.37);}
+}
+@supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter:blur(15px))){
+  #navnav{
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1); 
+    }
+}
+
+#navnav {
   border-radius: 10px;
   padding: 0px !important;
   border: 1px solid rgba(255, 255, 255, 0.18);
