@@ -114,5 +114,8 @@ const samplepdfs = [
 ];
 // samplepdfs.id.sort();
 // samplepdfs.sort((i)=> (return i.id))
+samplepdfs.sort((i,j) =>{
+  return Number(i.id)-Number(j.id)
+});
 
 export default samplepdfs; 
