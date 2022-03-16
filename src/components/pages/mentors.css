@@ -42,6 +42,7 @@
     /* background-image: url('../images/card-bg.png'); */
     background-color: rgb(252, 220, 209);
     transform: scale(0.9);
+    width: 100%;
 }
 
 .mentor-cards .card-body:last-of-type{
