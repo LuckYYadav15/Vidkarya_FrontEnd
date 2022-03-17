@@ -94,7 +94,7 @@ const team = [
                 dev_name: "Harsh Rawat",
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/harshrawat20",
-                linkden: "https://www.linkedin.com/in/",
+                linkden: "https://www.linkedin.com/in/harshrawat20",
                 image: "images/Harsh.jpeg"
             },
             {
