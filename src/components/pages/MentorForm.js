@@ -19,7 +19,7 @@ export default function MentorForm(){
   }, []);
     return (
         <>
-         <Header color={"rgba(3,7,42,0.7)"}/>
+         <Header color={"rgba(254,68,101,0.8)"}/>
           <section className="main-container"> 
               <form className="mentor-container" id="mentor-form">
                   <div className="title"><h1>Mentor contact form</h1></div>
