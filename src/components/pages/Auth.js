@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Auth.css";
 import axios from "axios";
-import { signInwithGoogle } from "../../auth/google_auth";
+// import { signInwithGoogle } from "../../auth/google_auth";
 
 export default function Auth() {
 
@@ -68,7 +68,7 @@ export default function Auth() {
         toast.success(" login successful !!!! ");
       }
     } catch (error) {
-      toast.error("wrong credencials /error in varication try again !!!! ");
+      toast.error("wrong credencials error in varication try again !!!! ");
     }
   };
 
@@ -131,10 +131,11 @@ export default function Auth() {
     }
 
     try {
+      console.log("Hello");
       const {data} = await axios.post("https://vidkarya-backend-98.herokuapp.com/Forgot_Password/email_verify" ,{
         email:userLoginInfo.email
       })
-
+      
       if(data){
         toast.info("varification mail sent to your registered email address!!");
       }else{

@@ -1,61 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
 /* N O T E S  P A G E*/
-.branch h1 {
+/* .branch h1 {
   text-align: center;
   padding: 15px;
   z-index: 1;
 }
 .branch h1 {
   padding: 30px 15px 15px 15px;
-}
-.notes-selection h5 {
+} */
+/* .notes-selection h5 {
   position: absolute;
   left: 10px;
   z-index: 2;
-}
+} */
 .buttons {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #fe1f66;
+  /* background-color: #fe1f66; */
   border-radius: 10px;
   padding: 0px;
   margin: auto;
-  width: fit-content;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.head-btn {
-  background-color: #fe1f66;
+.buttons .inputBox{
+  flex: 2 350px;
+  max-width: 400px;
+}
+.buttons input[type="search"]{
+  padding:.5rem 1rem;
+  background-color: rgba(250, 248, 248, 0.507);
+  width: 90%;
+  flex: 2;
   color: white;
-  width: 100px;
-  padding: 10px;
-  margin: 0px 20px;
-  border-radius: 5px;
-  border: none;
-  transition: 0.5s;
 }
-.head-btn:first-of-type {
-  margin-left: 0px;
-}
-.head-btn:last-of-type {
-  margin-right: 0px;
-}
-.head-btn:focus {
-  background-color: white;
-  color: #fe1f66;
-  font-weight: 500;
-  transform: scaleX(1.01);
-}
-.label-name {
-  position: absolute;
-  right: -125px;
+
+.label-name{
+  margin: 0rem 1rem;
 }
 .label-name select {
   color: white;
   background-color: #fe1f66;
   padding: 10px;
   border-radius: 10px;
+  margin: 0px 5px;
+  flex: 1;
 }
 .chapters p:first-of-type {
   text-align: right;
@@ -63,28 +55,76 @@
 .chapter-card .chapter-title {
   text-align: center;
   font-weight: 600;
-  font-size: 30px;
-  margin: 10px;
+  font-size: 1.25rem;
 }
-.chapters {
+.chapters{
+  display: flex;
   border: 2px outset #fe1f66;
-  margin: 10px;
-  padding: 10px;
+  width: 250px;
+  padding: 1em;
+  min-height: 150px;
+  max-height: fit-content;
   box-shadow: 0.5px 0.5px black, 0.75px 0.75px black;
-  flex-basis: 300px;
-  flex-shrink: 0;
-  flex-grow: 0;
   border-radius: 10px;
   flex-direction: column;
   background-color: #fe1f66;
   transition: 0.2s;
+  margin: 1em;
 }
-
-.chapters .chapter-teacher {
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
+.popup-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.popup{
+  outline: 0;
+  min-width: 300px;
+  width: 80vw;
+  margin: auto;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  height: 500px;
+  max-height: 100vh;
+  background-color:rgba(0, 0, 0, 0.568);
+  backdrop-filter: blur(15px);
+}
+.popup .chapter-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 425px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  padding: 1rem 0rem 0rem 0rem;
+}
+.popup-heading{
+    border-radius: 1rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(122, 129, 129, 0.5);
+}
+.popup ::-webkit-scrollbar {
+  appearance: none;
+  height: 10px;
+  transition: 0.3s;
+  margin:1rem;
+}
+.popup ::-webkit-scrollbar-track {
+    background-color: white;
+  border-radius: 20px;
+}
+.popup ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #18171788;
+}
+.popup ::-webkit-scrollbar-track:hover {
+  transform: scale(1.1);
+} 
 .chapters:hover {
   transform: scale(1.05);
 }
@@ -92,87 +132,71 @@
   border: 2px solid white;
 }
 .chapter-card {
-  margin: 25px auto;
-  padding: 1rem 0rem;
-  display: flex;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
-  overflow-x: auto;
+  align-items: center;
+  border-radius: .75em;
+  padding: 1em;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .notes-selection {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   min-height: 60vh;
-}
-.isactive{
-  background-color: white;
-  color: #fe1f66;
-}
-.notactive{
-  background-color: #fe1f66;
-  color: white;
+  position: relative;
 }
 .notes-selection ::-webkit-scrollbar {
   appearance: none;
   height: 10px;
   transition: 0.3s;
+  margin:1rem;
 }
 .notes-selection ::-webkit-scrollbar-track {
   background: white;
   border-radius: 20px;
 }
 .notes-selection ::-webkit-scrollbar-thumb {
-  height: 5px;
   border-radius: 10px;
   background-color: #fe1f66;
 }
 .notes-selection ::-webkit-scrollbar-track:hover {
   transform: scale(1.1);
+} 
+.cross-button{
+  background-color:rgba(67, 0, 9);
+  color: #fe1f66;
+  border: rgba(67,0,93) 2px solid;
+}
+.cross-button:hover{
+  background-color:white;
+  color: #fe1f66;
+  border: rgba(67,0,93) 2px solid;
+  background-color: rgba(67,0,93);
 }
 
-@media screen and (max-width: 750px) and (min-width: 300px) {
-  .branch h1 {
-    position: relative;
-    right: 30px;
-  }
-  .chapter-card {
-    flex-direction: column;
-    padding: 20px;
-  }
+
+@media screen and (max-width: 768px) and (min-width: 300px) {
   .chapters {
     flex-basis: 200px;
     width: 90%;
-    margin: 10px auto;
-
+    margin: 1em auto;
     position: relative;
-    height: fit-content;
   }
-  .label-name {
-    position: absolute;
-    bottom: -70px;
-    right: 0px;
+  .chapter-card{
+    background-color:rgba(0, 0, 0, 0.568);
   }
-  .head-btn {
-    margin: 0px;
+  .chapters>*{
+    margin: 0 !important;
   }
   .chapters p:first-of-type {
     text-align: right;
     position: relative;
   }
-}
-@media screen and (min-width: 300) and (max-width: 450) {
-  .navbar-brand {
-    margin: 0rem;
-  }
-
-  .chapters {
-    width: 300px;
-    margin: 0px;
-  }
-
-  #brand-text {
-    margin: 0px !important;
-  }
-  .notes-selection h5 {
-    position: initial;
-    text-align: center;
+  .labels{
+    flex: 2 1 100%;
+    display: flex;
+    justify-content: center;
   }
 }

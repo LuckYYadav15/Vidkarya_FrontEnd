@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="home-bg-box">
-        <Header />
+        <Header color={"rgba(254,68,101,0.8)"}/>
         <div id="get_started">
           <div id="getstarted_box">
             <div id="content">

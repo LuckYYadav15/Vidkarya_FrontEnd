@@ -1,102 +1,89 @@
 .card1{
-    height: 10rem;
-     cursor: pointer;
-     background-color: #ff5b67;
-     transition: all 0.5s;
-     border-radius: 3%;
-   }
-   #root{
-    background: url('./components/pages/images/bground.jpg');
-     background-size: cover;
-     min-height: 100vh;
-   }
-   .div{
-     display: flex;
-     justify-content: center;
-   }
-   .pdf-overview{
-    position: relative;
-    z-index: 65;
-    height: 100vh;
-    max-width: 100%;
-    width: 100vw;
-    max-height:100%;
-    background-color: #252424b0;
-  }
-  .pdf-overview>div:nth-of-type(2){
-    height: 100%;
-    width: 100%;
-  }
-   .pdf-preview{
-     position: absolute;
-     /* max-height: 100vh; */
-     width: 80%;
-     max-width: 1000px;
-     height: 90%;
-     background-color: transparent;
-   }
-   .pdf-preview iframe{
-    width: 100%;
-    height: 80vh;
-   }
-   .cross-button{
-     margin-left: auto;
-     margin-right:20px;
-     display: flex;
-     border: 2px solid white;
-     align-self: center;
-     border-radius: 10px;
-     background-color: transparent;
-   }
-   .cross-button:hover{
-     background-color: white;
-     color: #f61b66;
-   }
-   .cross-button .fas{
-     color: white;
-     padding: 10px;
-     font-size: 16px;
-   }
+  height: 10rem;
+   cursor: pointer;
+   background-color: #ff5b67;
+   transition: all 0.5s;
+   border-radius: 3%;
+ }
+ #root{
+  background: url('./components/pages/images/bground.jpg');
+   background-size: cover;
+   min-height: 100vh;
+ }
+ .div{
+   display: flex;
+   justify-content: center;
+ }
+ .pdf-overview{
+  position: relative;
+  z-index: 65;
+  height: 100vh;
+  max-width: 100%;
+  width: 100vw;
+  max-height:100%;
+  background-color: #252424b0;
+}
+.pdf-overview>div:nth-of-type(2){
+  height: 100%;
+  width: 100%;
+}
+ .pdf-preview{
+   position: absolute;
+   /* max-height: 100vh; */
+   width: 80%;
+   max-width: 1000px;
+   height: 90%;
+   background-color: transparent;
+ }
+ .pdf-preview iframe{
+  width: 100%;
+  height: 80vh;
+ }
+ .pdf-overview .cross-button{
+   margin-left: auto;
+   margin-right:20px;
+   display: flex;
+   align-self: center;
+ }
+ .react-pdf__Document{
+   margin-left: .5rem;
+ 
+ }
+ .fa-file-pdf{
+ color: red;
+ }
 
-   .react-pdf__Document{
-     margin-left: .5rem;
+ .branches-btns .btn{
+      width: 25%;
+      background-color: #f61b66;
+ }
+ .link-subjects-box{
+   width: 90%;
+ }
+ 
+ .branches-tolink-btns .btn{
+  width: 80%;
+  background-color: #f61b66;
+ }
+ 
+ @media  (max-width:400px) {
+  .pdf-preview{
    
-   }
-   .fa-file-pdf{
-   color: red;
-   }
+    overflow: scroll;
   
-   .branches-btns .btn{
-        width: 25%;
-        background-color: #f61b66;
-   }
-   .link-subjects-box{
-     width: 90%;
-   }
+    height: 400px;
+    width: 380px;
+    background-color: transparent;
+  
+  
    
-   .branches-tolink-btns .btn{
-    width: 80%;
-    background-color: #f61b66;
-   }
-   
-   @media  (max-width:400px) {
-    .pdf-preview{
-     
-      overflow: scroll;
-    
-      height: 400px;
-      width: 380px;
-      background-color: transparent;
-    
-    
-     
-    }
-   }
-   
-   
-   
+  }
+ }
+ 
+ 
+ 
 
 
 
 
-   
+ 

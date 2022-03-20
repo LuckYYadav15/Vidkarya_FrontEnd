@@ -9,18 +9,18 @@ export default function Verify() {
   const { search } = useLocation();
   const navigate = useNavigate();
 
-  const { userId ,reason } = queryString.parse(search);
+  const { userId,token,reason } = queryString.parse(search);
   console.log(userId);
  
   useEffect(() => {
     const verifyUser = async () => {
-      console.log("HI From FrontEnd");
+      // console.log("HI From FrontEnd");
       try {
-        console.log("HI fro FrontEnd TRy");
+        // console.log("HI fro FrontEnd TRy");
         const { data } = await axios.post("https://vidkarya-backend-98.herokuapp.com/verify", {
-          userId,reason
+          userId,token,reason
         });
-        console.log("2 Hi From FrontEnd")
+        // console.log("2 Hi From FrontEnd")
         console.log(data);
         if (data) {
           localStorage.setItem("userInfo", JSON.stringify(data));

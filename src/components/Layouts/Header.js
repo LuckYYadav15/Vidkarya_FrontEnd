@@ -13,7 +13,7 @@ function changestate() {
   }
 }
 
-const Header = () => {
+const Header = (props) => {
 
   const navigate = useNavigate();
   const [user, setuser] = useState({});
@@ -43,12 +43,12 @@ const Header = () => {
       <section>
         <nav className="navbar navbar-expand-lg navbar-dark" id="navnav">
           <div className="container-fluid">
-            {/* <img
+            <img
               src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
               alt=""
               width="65"
               className="web-icon d-inline-block align-text-top"
-            /> */}
+            />
             <a className="heading navbar-brand ms-1" id="brandtext" href="/">
               <div id="brand-name" href="homepage.html">
                 Vidkarya
@@ -70,7 +70,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav ms-auto">
+              <ul className="navbar-nav ms-auto me-5">
                 <Link to="/">
                   <li className=" nav-item">
                     <a className="nav-link active" aria-current="page" href="/">
@@ -78,7 +78,7 @@ const Header = () => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown ms-2">
+                <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -92,6 +92,7 @@ const Header = () => {
                   <ul
                     className="dropdown-menu dropdown_menu"
                     aria-labelledby="navbarDropdownMenuLink"
+                    style={{backgroundColor:props.color}}
                   >
                     <Link to="/notes">
                       <li>
@@ -122,7 +123,7 @@ const Header = () => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown profile ms-2">
+                <li className="nav-item dropdown profile">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -139,9 +140,10 @@ const Header = () => {
                   <ul
                     className="dropdown-menu  dropdown_menu"
                     aria-labelledby="navbarDropdownMenuLink"
+                    style={{backgroundColor:props.color}}
                   >
                     <li className="ml-2 profile-name" >
-                      <p className="text-white ml-2 px-3">{user.userName}</p>
+                      <p className="text-white ml-2">{user.userName}</p>
                     </li>
                     <li>
                       <button className="dropdown-item .logout" onClick={handleLogout}>

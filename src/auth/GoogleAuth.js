@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 export default function GoogleAuth() {
 
@@ -33,11 +35,16 @@ export default function GoogleAuth() {
       signInWithPopup(auth, Provider)
         .then((res) => {
           //console.log(res.user);
+          const userName = res.user.displayName;
+          const email = res.user.email;
           const userDetails = {
-            userName: res.user.displayName,
-            email: res.user.email,
+            userName:userName,
+            email: email,
           };
-
+          const {data}  = axios.post("https://vidkarya-backend-98.herokuapp.com/google-auth", {
+            userName, email
+      });
+          console.log(userDetails);
           if (!res.user.email.includes("@iiitdwd.ac.in")) {
             navigte('/auth');
           } else {

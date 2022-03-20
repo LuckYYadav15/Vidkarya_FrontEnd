@@ -14,7 +14,7 @@ export default function AboutUs() {
       <div className="about-bg-box">
         {/* <img src={team[0].details.imgSrc} alt ="..."/> */}
 
-        <Header />
+        <Header color={"rgba(3,7,42,0.7)"}/>
         <div className="about-page">
           <div className="card text-center animate__animated animate__pulse topcard aboutus">
             <div className="card-header" style={{ fontSize: "xx-large" }}>

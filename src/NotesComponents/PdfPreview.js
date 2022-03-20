@@ -7,44 +7,34 @@ import { pdfjs } from "react-pdf";
 
 
 export default function PdfPreview({
-  displayPdf,
-  pdfName,
-  handleCancelPdfShow,
+  NotesId,
   fileLink,
+  setdisplaypdf
 }) {
-  const [pages, setpages] = useState(null);
-  const [pageNo, setpageNo] = useState(1);
-  const [isShowPdf, setisShowPdf] = useState(true);
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setpages(numPages);
-    setpageNo(1);
-  };
-  const array = new Array(pages);
+  
+  
   const [pdfSrc, setpdfSrc] = useState("");
-  useEffect(() => {
-    setpdfSrc(fileLink(pdfName))
-
-  }, [])
+ 
   // console.log(pdfSrc);
   return (
     <>
-      <div className={`pdf-overview d-${displayPdf ? "block" : "none"}`}>
+      <div className={`pdf-overview `}>
         <div className="pt-2 pdf-nav">
           <div className="d-flex">
-            <button className="cross-button text-white ml-auto" onClick={handleCancelPdfShow}>
+            <button className="cross-button text-white px-3 py-2 rounded" onClick={()=>setdisplaypdf(false)}>
             <i class="fas fa-times"></i>
             </button>
           </div>
           <div className="d-flex">
-            <h6 className=" my-2 text-white d-inline mx-auto h4">{pdfSrc.NotesId}</h6>
+            <h6 className=" my-2 text-white d-inline mx-auto h4">{NotesId}</h6>
           </div>
         </div>
         <div className="d-flex justify-content-center">
           <div className={`pdf-preview`}>
             {/* <embed src={pdfFile} width="800px" height="2100px" /> */}
             <iframe
-              src = {pdfSrc.fileLink}
+              src = {fileLink}
               height="600"
               allow="autoplay"
             ></iframe>
