@@ -70,7 +70,7 @@ export default function MentorRegister() {
 
   return (
     <>
-      <Header />
+      <Header color={"rgba(3,7,42,0.7)"}/>
       <section className="main-container">
         <div className="mentor-container" id="mentor-form">
           <div className="title"><h1>Mentor contact form</h1></div>

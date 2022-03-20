@@ -59,7 +59,7 @@ export default function Notes({ course, sem }) {
         <div>
           
             <div>
-              <Header />
+            <Header color={"rgba(3,7,42,0.7)"}/>
               <h1 className="text-white text-center p-4">Courses</h1>
               <div className="buttons">
             {/* <button value="" className="head-btn">
