@@ -24,7 +24,7 @@ export default function Mentors() {
   return (
     <div>
       <div className="mentors-bg-box">
-        <Header />
+        <Header color={"rgba(254,68,101,0.8)"}/>
         <div id="mentorbox">
           <h1 className="text-center mt-3">Mentors</h1>
           <div className="row justify-content-sm-center">
