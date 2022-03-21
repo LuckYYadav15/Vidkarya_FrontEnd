@@ -30,7 +30,7 @@ export default function PdfPreview({
             <h6 className=" my-2 text-white d-inline mx-auto h4">{NotesId}</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center h-auto">
           <div className={`pdf-preview`}>
             {/* <embed src={pdfFile} width="800px" height="2100px" /> */}
             <iframe
