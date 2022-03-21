@@ -2,6 +2,8 @@
     background: url("./images/aboutus_bg.jpg") no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
     background-attachment: fixed;
     max-width: 100%;
   }
