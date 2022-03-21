@@ -70,7 +70,7 @@ const Header = (props) => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav ms-auto me-5">
+              <ul className="navbar-nav ms-auto ">
                 <Link to="/">
                   <li className=" nav-item">
                     <a className="nav-link active" aria-current="page" href="/">
@@ -78,7 +78,7 @@ const Header = (props) => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown ms-2">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -123,7 +123,7 @@ const Header = (props) => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown profile">
+                <li className="nav-item dropdown profile ms-3">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -143,7 +143,7 @@ const Header = (props) => {
                     style={{backgroundColor:props.color}}
                   >
                     <li className="ml-2 profile-name" >
-                      <p className="text-white ml-2">{user.userName}</p>
+                      <p className="text-white ms-2">{user.userName}</p>
                     </li>
                     <li>
                       <button className="dropdown-item .logout" onClick={handleLogout}>
