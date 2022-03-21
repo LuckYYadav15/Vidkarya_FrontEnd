@@ -14,7 +14,7 @@ export default function AboutUs() {
       <div className="about-bg-box">
         {/* <img src={team[0].details.imgSrc} alt ="..."/> */}
 
-        <Header color={"rgba(3,7,42,0.7)"}/>
+        <Header color={"rgba(3,7,42,0.7)"} />
         <div className="about-page">
           <div className="card text-center animate__animated animate__pulse topcard aboutus">
             <div className="card-header" style={{ fontSize: "xx-large" }}>
@@ -61,13 +61,13 @@ export default function AboutUs() {
                   </div>
                 </div>
               </div>
-              <h5 className="card-title">
+              <p className="card-title p-2 text-justify">
                 We present to you Vidkarya the only Educational Hub for
                 engineering graduates. The team has worked really hard to snap
                 the idea into reality and it's my immense pleasure to lead such
                 a dedicated team. So enjoy the wonderful experience and
                 appreciate the under-mentioned Developers.
-              </h5>
+              </p>
             </div>
           </div>
           <div className="row" id="teamcardbox">
