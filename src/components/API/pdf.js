@@ -94,7 +94,7 @@ const samplepdfs = [
     id: '09',
     branch: 'CSE',
     sem: "4",
-    CourseName: "Software Enginering",
+    CourseName: "Software Engineering",
     NotesId: "03_CSE_2020_IIITDWD_SE",
     Showtag: "Author 3",
     fileLink: "https://drive.google.com/file/d/1KbniGVSWRfAky7Llq3phGZfdgy2ze6Xf/preview",
