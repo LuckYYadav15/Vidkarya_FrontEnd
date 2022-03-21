@@ -60,7 +60,13 @@ const samplepdfs = [
         NotesId: "04_CSE_2020_IIITDWD_LA",
         fileLink: "https://drive.google.com/file/d/1ZoMpOloyhUW7HLJaLB5JX123xnCgvwn0/preview",
         DateOfUpload: "16-03-2022"
-      }
+      },
+      {
+        Showtag: "Author 3",
+        NotesId: "03_CSE_2020_IIITDWD_LA_Friday",
+        fileLink: "https://drive.google.com/file/d/1Zbr8EihMiXTliFO8jX7EDheQmRxYXikN/preview",
+        DateOfUpload: "21-03-2022"
+      },
     ],
   },
   {

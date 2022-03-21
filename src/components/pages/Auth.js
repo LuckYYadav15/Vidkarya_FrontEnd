@@ -68,7 +68,7 @@ export default function Auth() {
         toast.success(" login successful !!!! ");
       }
     } catch (error) {
-      toast.error("wrong credencials error in varication try again !!!! ");
+      toast.error("wrong credentials error in verfication try again !!!! ");
     }
   };
 
@@ -105,7 +105,7 @@ export default function Auth() {
       if (res) {
         console.log(res);
         toast.info(
-          "sent the varification email to your registered email address !!"
+          "sent the verification email to your registered email address !!"
         );
         setuserSignupInfo({
           userName: "",
@@ -131,19 +131,19 @@ export default function Auth() {
     }
 
     try {
-      console.log("Hello");
+      // console.log("Hello");
       const {data} = await axios.post("https://vidkarya-backend-98.herokuapp.com/Forgot_Password/email_verify" ,{
         email:userLoginInfo.email
       })
       
       if(data){
-        toast.info("varification mail sent to your registered email address!!");
+        toast.info("verification mail sent to your registered email address!!");
       }else{
-      toast.error("error in varification!!");
+      toast.error("error in verification!!");
 
       }
     } catch (error) {
-      toast.error("error in varification!!");
+      toast.error("error in verification!!");
       console.log(error.message);
       
     }

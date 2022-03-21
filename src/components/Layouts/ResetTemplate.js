@@ -38,7 +38,7 @@ export default function ResetTemplate() {
         navigate('/')
       }
     } catch (error) {
-        toast.error("error in varification");
+        toast.error("error in verification");
     }
   };
 
