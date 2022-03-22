@@ -25,7 +25,7 @@ const team = [
                 dev_name: "Hitarth Vyas",
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/Hitarth-Vyas",
-                linkden: "https://www.linkedin.com/in/",
+                linkden: "https://www.linkedin.com/in/hitarth-vyas-340b36203/",
                 image: "images/Hitarth.jpeg"
             },
             {

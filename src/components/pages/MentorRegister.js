@@ -52,12 +52,12 @@ export default function MentorRegister() {
       });
       // function temp
       if (res) {
-        toast.success("mentor registered successfully!!");
+        toast.success("Mentor registered successfully!!");
         const timer = setTimeout(() => {
           navigate("/mentors");
         }, 2500);
       } else {
-        toast.error("error in registering mentor");
+        toast.error("Error in registering mentor");
       }
     } catch (error) {
       console.log(error.message);
