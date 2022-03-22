@@ -77,7 +77,6 @@ export default function Notes({ course, sem }) {
             </div>
             <div className="inputBox">
               <input type="search" className="mx-2 mb-3 border rounded-pill" placeholder="Institute name"/>
-              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             {/* <div className="inputBox">
               <input type="search" className="mx-2 mb-3 border rounded-pill" placeholder="Course-code"/>
@@ -87,6 +86,7 @@ export default function Notes({ course, sem }) {
             <label for="branch" className="label-name mx-1">
               <span className="text-light">Branch</span>
               <select name="branch" id="branch">
+                <option value="all">All</option>
                 <option value="CSE">CSE</option>
                 <option value="ECE">ECE</option>
                 <option value="CSE">DSAI</option>
@@ -95,11 +95,11 @@ export default function Notes({ course, sem }) {
             <label for="semester" className="label-name mx-1">
               <span className="text-light">Sem:</span>
               <select name="semester" id="semester">
-                <option value="all" selected>all</option>
+                <option value="all">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="4" selected>4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
