@@ -29,7 +29,7 @@ const samplepdfs = [
     ],
   },
   {
-    id: "04",
+    id: "02",
     branch: "CSE",
     sem: "4",
     CourseName: "Linear Algebra",
@@ -70,7 +70,7 @@ const samplepdfs = [
     ],
   },
   {
-    id: "07",
+    id: "03",
     branch: "CSE",
     sem: "4",
     CourseName: "Operating System",
@@ -84,7 +84,7 @@ const samplepdfs = [
     ],
   },
   {
-    id: "11",
+    id: "04",
     branch: "CSE",
     sem: "4",
     CourseName: "Software Engineering",
@@ -98,7 +98,7 @@ const samplepdfs = [
     ],
   },
   {
-    id: "14",
+    id: "05",
     branch: "CSE",
     sem: "4",
     CourseName: "Theory of Computation",
