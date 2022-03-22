@@ -8,7 +8,7 @@ const mentors = [
         Achivement1 : "CSE, 4th Sem",
         Achivement2 : "Enthusiast in OS",
         Achivement3 : "Proficient in DBMS",
-        github_link : "https://github.com/Daulat",
+        github_link : "https://github.com/daulat56",
         imgSrc:"/images/Daulat.jpeg"
     },
     {
@@ -28,7 +28,7 @@ const mentors = [
         Achivement1 : "CSE,4th semester",
         Achivement2 : "Open Source Contributer",
         Achivement3 : "Pursuing Ethical Hacking",
-        linkdin_link : "https://linkdin.com",
+        github_link : "https://github.com/harshrawat20",
         imgSrc:"/images/Harsh.jpeg"
     },
     {
@@ -38,7 +38,7 @@ const mentors = [
         Achivement1 : "ECE, 4th Sem",
         Achivement2 : "Codechef 3 Star",
         Achivement3 : "Frontend Developer",
-        github_link : "https://github.com",
+        github_link : "https://github.com/HARSHITMISHRA655",
         imgSrc:"/images/Harshit.jpg"
     },
     {
@@ -48,7 +48,7 @@ const mentors = [
         Achivement1 : "CSE, 4th Sem",
         Achivement2 : "Enthusiast in Mathematics",
         Achivement3 : "FrontEnd Development",
-        github_link : "https://github.com/LuckYYadav15",
+        github_link : "https://github.com/hemant935",
         imgSrc:"/images/Hemant.jpeg"
     },
     {
