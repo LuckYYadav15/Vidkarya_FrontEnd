@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PdfInfoCard from "./PdfInfoCard";
 import samplepdfs from "../components/API/pdf";
 import sample_notes from "../components/API/sample_notes";
-
+import axios from "axios";
 import PdfPreview from "./PdfPreview";
 import "../components/Layouts/notes.css";
 import Header from "../components/Layouts/Header";
