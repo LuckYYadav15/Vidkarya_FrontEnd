@@ -63,7 +63,7 @@ const samplepdfs = [
       },
       {
         Showtag: "Author 3",
-        NotesId: "03_CSE_2020_IIITDWD_LA_Friday",
+        NotesId: "03_CSE_2020_IIITDWD_LA_Thursday",
         fileLink: "https://drive.google.com/file/d/1Zbr8EihMiXTliFO8jX7EDheQmRxYXikN/preview",
         DateOfUpload: "21-03-2022"
       },
