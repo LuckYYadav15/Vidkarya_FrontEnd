@@ -42,7 +42,7 @@ color: #fff;
 body,a,span,select{
 color: white;
 }
-button:focus{
+#link-box button:focus{
 background-color: white !important;
 color: #fe1f66 !important;
 }

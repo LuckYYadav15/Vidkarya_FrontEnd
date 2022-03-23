@@ -24,13 +24,13 @@
     padding: 1%;
 }
 .mentorpic {
-    /* transform: scale(0.5); */
-    width: 200px;
-    height: 200px;
-    display: block;
-    border-radius:50%;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  aspect-ratio: 1;
+  max-width: 200px;
 }
 
 .mentor-cards {
@@ -43,6 +43,8 @@
     background-color: rgb(252, 220, 209);
     transform: scale(0.9);
     width: 100%;
+    max-width: 400px;
+    margin: auto;
 }
 
 .mentor-cards .card-body:last-of-type{
@@ -73,7 +75,8 @@
 }
 .mentor-cards
 {
-    display:inline-block;
+    display:flex;
+    margin: auto;
 }
 
 .github-icon

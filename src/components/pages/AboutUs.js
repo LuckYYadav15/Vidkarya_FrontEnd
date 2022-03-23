@@ -7,8 +7,10 @@ import dummyimg from "./images/image-default-dp.jpg";
 import "./about.css";
 import Header from "../Layouts/Header";
 import Footer from "../Layouts/Footer";
+import { useState } from "react/cjs/react.production.min";
 
 export default function AboutUs() {
+
   return (
     <>
       <div className="about-bg-box">
@@ -28,10 +30,10 @@ export default function AboutUs() {
             <div className="card-footer text-muted">Education with Excellence</div>
           </div>
           <div className="card text-center animate__animated animate__pulse topcard founder">
-            <div className="card-header" style={{ fontSize: "xx-large" }}>
+            <div className="card-header text-center" style={{ fontSize: "xx-large" }}>
               Founder's Message
             </div>
-            <div className="card-row">
+            <div className="card-row mt-3">
               <div className="card-body ">
                 <div className="content">
                   <div className="card-img">
@@ -61,7 +63,7 @@ export default function AboutUs() {
                   </div>
                 </div>
               </div>
-              <p className="card-title p-2 text-justify">
+              <p className={`card-title p-2`}>
                 We present to you Vidkarya the only Educational Hub for
                 engineering graduates. The team has worked really hard to snap
                 the idea into reality and it's my immense pleasure to lead such

@@ -61,9 +61,9 @@ const MentorCard = ({ mentors }) => {
           </ul>
           <div className="card-body">
             <Link to={`/mentor/register?id=${mentors.id}`}>
-              <buttton href="#" className="btn btn-outline-dark">
+              <button href="#" className="btn btn-outline-dark">
                 Apply here
-              </buttton>
+              </button>
             </Link>
             <a href={mentors.github_link}>
               {" "}

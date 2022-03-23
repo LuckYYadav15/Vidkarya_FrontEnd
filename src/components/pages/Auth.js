@@ -36,13 +36,13 @@ export default function Auth() {
     const val = e.target.value;
     const name = e.target.name;
 
-    setuserLoginInfo({ ...userLoginInfo, [name]: val });
+    setuserLoginInfo({...userLoginInfo, [name]: val });
   };
 
   const handleSignupChange = (e) => {
     const val = e.target.value;
     const name = e.target.name;
-    setuserSignupInfo({ ...userSignupInfo, [name]: val });
+    setuserSignupInfo({...userSignupInfo, [name]: val });
   };
 
   //login data post to backend
