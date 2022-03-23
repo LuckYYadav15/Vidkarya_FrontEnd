@@ -5,19 +5,26 @@ import { useEffect ,useState } from "react";
 
 
 
-function changestate() {
-  if (window.innerWidth <= 992) {
-    return <span>profile</span>;
-  } else {
-    return <img src={dp} alt="image" />;
-  }
-}
+// function changestate() {
+//   if (window.innerWidth <= 992) {
+//     return <span>profile</span>;
+//   } else {
+//     return <img src={dp} alt="image" />;
+//   }
+// }
 
 const Header = (props) => {
 
   const navigate = useNavigate();
   const [user, setuser] = useState({});
   const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [scrollCollapse,setCollapse] = useState('show');
+
+  const handleCollapse = ()=>{
+    if(window.innerWidth<992){
+        setCollapse('show');
+    }
+  }
 
   const handleLogout = ()=>{
 
@@ -78,7 +85,7 @@ const Header = (props) => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown ms-2">
+                <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -123,7 +130,7 @@ const Header = (props) => {
                     </a>
                   </li>
                 </Link>
-                <li className="nav-item dropdown profile ms-3">
+                <li className="nav-item dropdown profile">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"

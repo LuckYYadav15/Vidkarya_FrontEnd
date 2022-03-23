@@ -22,6 +22,8 @@ h6 {
   border-bottom: 1px solid white;
 }
 
+
+
 /*     N A V B A R     */
 
 /* #navnav {
@@ -144,6 +146,7 @@ li i {
   #content {
     padding: 3.25rem 5rem 1.25rem 5rem;
   }
+
   .container-fluid img {
     transform: scale(0.75);
   }
@@ -163,14 +166,26 @@ li i {
   #menubutton {
     margin-right: -5%;
   }
+  #menubutton:active,#menubutton:focus{
+    background-color: transparent !important;
+  }
+  .dropdown-toggle{
+    margin-left: 1rem !important;
+  }
 }
 
 
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
+nav .dropdown_menu a:hover{
+  color:black !important;
+}
+.nav a.nav-link:hover{
+  color: white;
+}
 .main-header {
   background: none;
 }

@@ -60,7 +60,7 @@ body {
   }
   
   #content {
-    padding: 6.25rem 10rem 1.25rem 10rem;
+    padding: 6.25rem 3rem 1.25rem 3rem;
     text-align: center;
     z-index: 5;
   }
@@ -87,8 +87,8 @@ body {
   }
   
   .feature-icon {
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
     padding:1%;
     transition: all 0.3s ease-in;
   }
@@ -114,7 +114,9 @@ body {
     transform: scale(1.1);
     color: #fff;    
   }
-  
+  #notes .feature-icon{
+    margin-right:.25rem;
+  }
   #links{
     margin-left: auto;
     margin-right: 10%;
@@ -183,10 +185,11 @@ body {
     .features{
       width: 50%;
     }
-    #links {
-      text-align: center;
+
+    .features h1{
+      display: flex;
+      flex-direction: column;
     }
-  
     #elements {
       transform: scale(0.85);
     }
@@ -194,9 +197,13 @@ body {
     #links {
       margin-left: auto;
       margin-right: 0%;
-      text-align: center;
     }
-  
+    #links h1{
+      display: flex;
+      margin-right: 25px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
     #mentors,#notes {
       padding-left: 0%;
     }
@@ -256,15 +263,16 @@ body {
   }
   
   /* tablets */
-  @media screen and (max-width: 1025px) and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     #links {
       text-align: center;
     }
-  
-    /* for svg wave  */
-    #getstarted_box {
-      min-height: 63vh;
+    #content{
+      padding: 6.25rem 10rem 1.25rem 10rem;
     }
+    
+    /* for svg wave  */
+
     /* .pg-heading
     {
       margin-left: 30%;
