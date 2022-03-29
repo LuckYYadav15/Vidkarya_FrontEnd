@@ -43,7 +43,7 @@ const mentors = [
     },
     {
         id : "05",
-        Name : "Hemant Dhewale",
+        Name : "Hemant Dhawale",
         Discription : "An Enthusiast in frontEnd Development.",
         Achivement1 : "CSE, 4th Sem",
         Achivement2 : "Enthusiast in Mathematics",
