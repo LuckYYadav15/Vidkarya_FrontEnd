@@ -47,7 +47,7 @@ const team = [
             {
                 dev_id: "06",
                 dev_name: "Ganji Nithin",
-                Achivement1: "CSE, 2nd Year.",
+                Achivement1: "DSAI, 2nd Year.",
                 github: "https://github.com/urstrulynithin",
                 linkden: "https://www.linkedin.com/in/ganji-nithin-384940223/",
                 image: "images/Nithin.jpeg"
@@ -100,14 +100,14 @@ const team = [
             {
                 dev_id: "04",
                 dev_name: "Neeraj",
-                Achivement1: "CSE, 2nd Year.",
+                Achivement1: "ECE, 2nd Year.",
                 github: "https://github.com/Kali-Decoder",
                 linkden: "https://www.linkedin.com/in/neeraj-choubisa-a4952b202/",
                 image: "images/Neeraj.jpeg"
             },
             {
                 dev_id: "05",
-                dev_name: "Prateek Agawral",
+                dev_name: "Prateek Agarwal",
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/prateekin",
                 linkden: "https://www.linkedin.com/in/",
