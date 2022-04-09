@@ -79,7 +79,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/Brij2003",
                 linkden: "https://www.linkedin.com/in/brij-vaghani-73aa74213/",
-                image: "images/image-default-dp.jpg"
+                image: "images/Brij.png"
             },
             {
                 dev_id: "02",
