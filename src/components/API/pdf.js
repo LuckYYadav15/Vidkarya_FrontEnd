@@ -39,26 +39,26 @@ const samplepdfs = [
     fileLink: "https://drive.google.com/file/d/1KW0F1pkVI5wRfyiTlCmOWRYnf0pHhbLN/preview",
     DateOfUpload: "21-02-2022"
   },
-  // {
-  //   id: '04',
-  //   branch: 'CSE',
-  //   sem: "4",
-  //   CourseName: "Linear Algebra",
-  //   NotesId: "01_CSE_2020_IIITDWD_LA",
-  //   Showtag: "Author 1",
-  //   fileLink: "https://drive.google.com/file/d/1LA8A10tI9ZCViw3ZmwpJTCVtOmueHRDe/preview",
-  //   DateOfUpload: "21-02-2022"
-  // },
-  // {
-  //   id: '05',
-  //   branch: 'CSE',
-  //   sem: "4",
-  //   CourseName: "Linear Algebra",
-  //   NotesId: "02_CSE_2020_IIITDWD_MATHS",
-  //   Showtag: "Author 2",
-  //   fileLink: "https://drive.google.com/file/d/1iKUdeRaUXifZ7q9f9IH6OntlXLp4yEwz/preview",
-  //   DateOfUpload: "21-02-2022"
-  // },
+  {
+    id: '04',
+    branch: 'CSE',
+    sem: "4",
+    CourseName: "Linear Algebra",
+    NotesId: "01_CSE_2020_IIITDWD_LA",
+    Showtag: "Author 1",
+    fileLink: "https://drive.google.com/file/d/1LA8A10tI9ZCViw3ZmwpJTCVtOmueHRDe/preview",
+    DateOfUpload: "21-02-2022"
+  },
+  {
+    id: '05',
+    branch: 'CSE',
+    sem: "4",
+    CourseName: "Linear Algebra",
+    NotesId: "02_CSE_2020_IIITDWD_MATHS",
+    Showtag: "Author 2",
+    fileLink: "https://drive.google.com/file/d/1iKUdeRaUXifZ7q9f9IH6OntlXLp4yEwz/preview",
+    DateOfUpload: "21-02-2022"
+  },
   {
     id: '06',
     branch: 'CSE',
@@ -69,17 +69,17 @@ const samplepdfs = [
     fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/preview",
     DateOfUpload: "13-04-2022"
   },
-  // {
+  {
 
-  //   id: '07',
-  //   branch: 'CSE',
-  //   sem: "4",
-  //   CourseName: "Linear Algebra",
-  //   NotesId: "04_CSE_2020_IIITDWD_MATH",
-  //   Showtag: "Author 4",
-  //   fileLink: "https://drive.google.com/file/d/1ZoMpOloyhUW7HLJaLB5JX123xnCgvwn0/preview",
-  //   DateOfUpload: "16-03-2022"
-  // },
+    id: '07',
+    branch: 'CSE',
+    sem: "4",
+    CourseName: "Linear Algebra",
+    NotesId: "04_CSE_2020_IIITDWD_COMPLETE",
+    Showtag: "Author 4",
+    fileLink: "https://drive.google.com/file/d/1ZoMpOloyhUW7HLJaLB5JX123xnCgvwn0/preview",
+    DateOfUpload: "16-03-2022"
+  },
   {
     id: '08',
     branch: 'CSE',
@@ -110,12 +110,12 @@ const samplepdfs = [
     fileLink: "https://drive.google.com/file/d/1DzgBYhOInEMfOCjH9BoeGyYvXo64ckLo/preview",
     DateOfUpload: "21-02-2022"
   }
-  
+
 ];
 // samplepdfs.id.sort();
 // samplepdfs.sort((i)=> (return i.id))
-samplepdfs.sort((i,j) =>{
-  return Number(i.id)-Number(j.id)
+samplepdfs.sort((i, j) => {
+  return Number(i.id) - Number(j.id)
 });
 
 export default samplepdfs; 
