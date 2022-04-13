@@ -65,8 +65,8 @@ const samplepdfs = [
       {
         Showtag: "Author 4",
         NotesId: "04_CSE_2020_IIITDWD_LA",
-        fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/view?usp=sharing",
-        DateOfUpload: "13-0-2022"
+        fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/preview",
+        DateOfUpload: "13-04-2022"
       },
       {
         Showtag: "Author 1",
