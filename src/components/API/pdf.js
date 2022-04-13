@@ -69,17 +69,17 @@ const samplepdfs = [
     fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/preview",
     DateOfUpload: "13-04-2022"
   },
-  {
+  // {
 
-    id: '07',
-    branch: 'CSE',
-    sem: "4",
-    CourseName: "Linear Algebra",
-    NotesId: "04_CSE_2020_IIITDWD_MATH",
-    Showtag: "Author 4",
-    fileLink: "https://drive.google.com/file/d/1ZoMpOloyhUW7HLJaLB5JX123xnCgvwn0/preview",
-    DateOfUpload: "16-03-2022"
-  },
+  //   id: '07',
+  //   branch: 'CSE',
+  //   sem: "4",
+  //   CourseName: "Linear Algebra",
+  //   NotesId: "04_CSE_2020_IIITDWD_MATH",
+  //   Showtag: "Author 4",
+  //   fileLink: "https://drive.google.com/file/d/1ZoMpOloyhUW7HLJaLB5JX123xnCgvwn0/preview",
+  //   DateOfUpload: "16-03-2022"
+  // },
   {
     id: '08',
     branch: 'CSE',
