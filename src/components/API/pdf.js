@@ -39,35 +39,35 @@ const samplepdfs = [
     fileLink: "https://drive.google.com/file/d/1KW0F1pkVI5wRfyiTlCmOWRYnf0pHhbLN/preview",
     DateOfUpload: "21-02-2022"
   },
-  {
-    id: '04',
-    branch: 'CSE',
-    sem: "4",
-    CourseName: "Linear Algebra",
-    NotesId: "01_CSE_2020_IIITDWD_LA",
-    Showtag: "Author 1",
-    fileLink: "https://drive.google.com/file/d/1LA8A10tI9ZCViw3ZmwpJTCVtOmueHRDe/preview",
-    DateOfUpload: "21-02-2022"
-  },
-  {
-    id: '05',
-    branch: 'CSE',
-    sem: "4",
-    CourseName: "Linear Algebra",
-    NotesId: "02_CSE_2020_IIITDWD_MATHS",
-    Showtag: "Author 2",
-    fileLink: "https://drive.google.com/file/d/1iKUdeRaUXifZ7q9f9IH6OntlXLp4yEwz/preview",
-    DateOfUpload: "21-02-2022"
-  },
+  // {
+  //   id: '04',
+  //   branch: 'CSE',
+  //   sem: "4",
+  //   CourseName: "Linear Algebra",
+  //   NotesId: "01_CSE_2020_IIITDWD_LA",
+  //   Showtag: "Author 1",
+  //   fileLink: "https://drive.google.com/file/d/1LA8A10tI9ZCViw3ZmwpJTCVtOmueHRDe/preview",
+  //   DateOfUpload: "21-02-2022"
+  // },
+  // {
+  //   id: '05',
+  //   branch: 'CSE',
+  //   sem: "4",
+  //   CourseName: "Linear Algebra",
+  //   NotesId: "02_CSE_2020_IIITDWD_MATHS",
+  //   Showtag: "Author 2",
+  //   fileLink: "https://drive.google.com/file/d/1iKUdeRaUXifZ7q9f9IH6OntlXLp4yEwz/preview",
+  //   DateOfUpload: "21-02-2022"
+  // },
   {
     id: '06',
     branch: 'CSE',
     sem: "4",
-    CourseName: "Linear Algebra",
-    Showtag: "Author 3",
-    NotesId: "03_CSE_2020_IIITDWD_LA",
-    fileLink: "https://drive.google.com/file/d/1Kapt_oWh9MmYwbBi3ggLuBKmQ_67uO7c/preview",
-    DateOfUpload: "21-02-2022"
+    CourseName: "Linear Algebra Complete",
+    Showtag: "Author 4",
+    NotesId: "04_CSE_2020_IIITDWD_LA",
+    fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/view?usp=sharing",
+    DateOfUpload: "13-04-2022"
   },
   {
 
