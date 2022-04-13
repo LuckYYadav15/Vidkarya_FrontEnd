@@ -63,7 +63,7 @@ const samplepdfs = [
     id: '06',
     branch: 'CSE',
     sem: "4",
-    CourseName: "Linear Algebra Complete",
+    CourseName: "Linear Algebra",
     Showtag: "Author 4",
     NotesId: "04_CSE_2020_IIITDWD_LA",
     fileLink: "https://drive.google.com/file/d/1fwUNzSUDSx0FRUA2BUceqSE1iwzpFrcQ/preview",
