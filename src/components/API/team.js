@@ -34,7 +34,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/hemant935",
                 linkden: "https://www.linkedin.com/in/hemant-dhawale-iiit-dharwad-10966820a/",
-                image: "images/Hemant.jpeg"
+                image: "images/Hemant.png"
             },
             {
                 dev_id: "05",
