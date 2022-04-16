@@ -50,7 +50,7 @@ const team = [
                 Achivement1: "DSAI, 2nd Year.",
                 github: "https://github.com/urstrulynithin",
                 linkden: "https://www.linkedin.com/in/ganji-nithin-384940223/",
-                image: "images/Nithin.jpeg"
+                image: "images/Nithin.png"
             },
             {
                 dev_id: "07",
@@ -87,7 +87,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/chaitnya23",
                 linkden: "https://www.linkedin.com/in/chaitnya-giri-87b180228/",
-                image: "images/Chaitnya.jpg"
+                image: "images/Chaitnya.png"
             },
             {
                 dev_id: "03",
