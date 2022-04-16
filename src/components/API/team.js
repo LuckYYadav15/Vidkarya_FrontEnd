@@ -26,7 +26,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/Hitarth-Vyas",
                 linkden: "https://www.linkedin.com/in/hitarth-vyas-340b36203/",
-                image: "images/Hitarth.jpeg"
+                image: "images/Hitarth.png"
             },
             {
                 dev_id: "04",
