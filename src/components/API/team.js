@@ -111,7 +111,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/prateekin",
                 linkden: "https://www.linkedin.com/in/",
-                image: "images/prateek.jpg"
+                image: "images/prateek.png"
             },
             {
                 dev_id: "06",
