@@ -9,7 +9,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/daulat56",
                 linkden: "https://www.linkedin.com/in/daulatjha/",
-                image: "images/Daulat.jpeg"
+                image: "images/Daulat.png"
 
             },
             {
