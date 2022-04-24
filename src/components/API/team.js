@@ -58,7 +58,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/RajeshNaidu1",
                 linkden: "https://www.linkedin.com/in/rajesh-naidu-maddila-376aa1202/",
-                image: "images/Rajesh.jpeg"
+                image: "images/Rajesh.png"
             },
             {
                 dev_id: "08",
