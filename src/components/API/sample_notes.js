@@ -107,11 +107,17 @@ const samplepdfs = [
         DateOfUpload: "16-03-2022"
       },
       {
-        NotesId: "02_CSE_2020_IIITDWD_OS(after mids)",
-        Showtag: "Author 2",
-        fileLink: "https://drive.google.com/file/d/1FG0GUHvOZA3IxPxxZ7153MkeeQrEA_UU/preview",
-        DateOfUpload: "26-03-2022"
+        NotesId: "08_CSE_2020_IIITDWD_OS(Advanced_GATE)",
+        Showtag: "Author 8",
+        fileLink: "https://drive.google.com/file/d/1pvgW6yfbfJ9ItXCHNdDaew4eROddNavx/preview",
+        DateOfUpload: "03-05-2022"
       }
+      // {
+      //   NotesId: "02_CSE_2020_IIITDWD_OS(after mids)",
+      //   Showtag: "Author 2",
+      //   fileLink: "https://drive.google.com/file/d/1FG0GUHvOZA3IxPxxZ7153MkeeQrEA_UU/preview",
+      //   DateOfUpload: "26-03-2022"
+      // }
     ],
   },
   {
