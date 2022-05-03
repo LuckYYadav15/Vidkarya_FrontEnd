@@ -141,32 +141,39 @@ const samplepdfs = [
     CourseName: "Theory of Computation",
     notes: [
       {
-        NotesId: "01_CSE_2020_IIITDWD_TOC",
-        Showtag: "Author 1",
+        NotesId: "08_CSE_2020_IIITDWD_TOC",
+        Showtag: "Author 8",
         fileLink:
-          "https://drive.google.com/file/d/1DzgBYhOInEMfOCjH9BoeGyYvXo64ckLo/preview",
-        DateOfUpload: "21-02-2022",
+          "https://drive.google.com/file/d/1poQsIOp-ID0_Mqm7j-W8_fjBfmqjrpSm/preview",
+        DateOfUpload: "03-05-2022",
       },
-      {
-        NotesId: "03_CSE_2020_IIITDWD_TOC",
-        Showtag: "Author 3",
-        fileLink:
-          "https://drive.google.com/file/d/1KdfBqyY08DCW4iE_7iHDpVxCwGDgyRBX/preview",
-        DateOfUpload: "21-02-2022",
-      },
-      {
-        NotesId: "04_CSE_2020_IIITDWD_TOC(15-24 March)",
-        Showtag: "Author 4",
-        fileLink:
-          "https://drive.google.com/file/d/10JTgYylS99QFcWufBJf6rC3hYWQJ5pPa/preview",
-        DateOfUpload: "26-03-2022",
-      },
-      {
-        Showtag: "Author 6",
-        NotesId: "06_CSE_2020_IIITDWD_TOC(24 March)",
-        fileLink: "https://drive.google.com/file/d/1MfUQiheAVlOES6UzQqlVMTXV1QewNYUU/preview",
-        DateOfUpload: "26-03-2022"
-      },
+      // {
+      //   NotesId: "01_CSE_2020_IIITDWD_TOC",
+      //   Showtag: "Author 1",
+      //   fileLink:
+      //     "https://drive.google.com/file/d/1DzgBYhOInEMfOCjH9BoeGyYvXo64ckLo/preview",
+      //   DateOfUpload: "21-02-2022",
+      // },
+      // {
+      //   NotesId: "03_CSE_2020_IIITDWD_TOC",
+      //   Showtag: "Author 3",
+      //   fileLink:
+      //     "https://drive.google.com/file/d/1KdfBqyY08DCW4iE_7iHDpVxCwGDgyRBX/preview",
+      //   DateOfUpload: "21-02-2022",
+      // },
+      // {
+      //   NotesId: "04_CSE_2020_IIITDWD_TOC(15-24 March)",
+      //   Showtag: "Author 4",
+      //   fileLink:
+      //     "https://drive.google.com/file/d/10JTgYylS99QFcWufBJf6rC3hYWQJ5pPa/preview",
+      //   DateOfUpload: "26-03-2022",
+      // },
+      // {
+      //   Showtag: "Author 6",
+      //   NotesId: "06_CSE_2020_IIITDWD_TOC(24 March)",
+      //   fileLink: "https://drive.google.com/file/d/1MfUQiheAVlOES6UzQqlVMTXV1QewNYUU/preview",
+      //   DateOfUpload: "26-03-2022"
+      // },
     ],
   },
 ];
