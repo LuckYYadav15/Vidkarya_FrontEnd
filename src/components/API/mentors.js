@@ -34,7 +34,7 @@ const mentors = [
     {
         id : "04",
         Name : "Harshit Mishra",
-        Discription : "An Academic Enthusiast with experience in competative programming",
+        Discription : "An Academic Enthusiast with experience in competitive programming",
         Achivement1 : "ECE, 4th Sem",
         Achivement2 : "Codechef 3 Star",
         Achivement3 : "Frontend Developer",
