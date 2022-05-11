@@ -153,6 +153,13 @@ const samplepdfs = [
           "https://drive.google.com/file/d/1poQsIOp-ID0_Mqm7j-W8_fjBfmqjrpSm/preview",
         DateOfUpload: "03-05-2022",
       },
+      {
+        NotesId: "08_CSE_2020_IIITDWD_TOC_Tuning",
+        Showtag: "Tuning Machine",
+        fileLink:
+          "https://drive.google.com/file/d/1uyY7LNiy7FLwkTf3A3YSTxxjSmJoGwUg/preview",
+        DateOfUpload: "11-05-2022",
+      },
       // {
       //   NotesId: "01_CSE_2020_IIITDWD_TOC",
       //   Showtag: "Author 1",
