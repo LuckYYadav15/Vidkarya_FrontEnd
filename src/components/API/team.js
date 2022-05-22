@@ -66,7 +66,7 @@ const team = [
                 Achivement1: "CSE, 2nd Year.",
                 github: "https://github.com/VivekYadav105",
                 linkden: "https://www.linkedin.com/in/vivek-yadav-58357b203",
-                image: "images/Vivek.jpeg"
+                image: "images/Vivek.png"
             }
         ]
     },
@@ -113,14 +113,14 @@ const team = [
                 linkden: "https://www.linkedin.com/in/",
                 image: "images/prateek.png"
             },
-            {
-                dev_id: "06",
-                dev_name: "Tarun Sharma",
-                Achivement1: "CSE, 2nd Year.",
-                github: "https://github.com/Tarunvats9068",
-                linkden: "https://www.linkedin.com/in/tarun-sharma-4a2763207/",
-                image: "images/Tarun.jpeg"
-            }
+            // {
+            //     dev_id: "06",
+            //     dev_name: "Tarun Sharma",
+            //     Achivement1: "CSE, 2nd Year.",
+            //     github: "https://github.com/Tarunvats9068",
+            //     linkden: "https://www.linkedin.com/in/tarun-sharma-4a2763207/",
+            //     image: "images/Tarun.jpeg"
+            // }
         ]
     }
 ]
