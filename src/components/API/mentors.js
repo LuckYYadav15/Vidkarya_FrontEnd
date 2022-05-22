@@ -9,7 +9,7 @@ const mentors = [
         Achivement2 : "Enthusiast in OS",
         Achivement3 : "Proficient in DBMS",
         github_link : "https://github.com/daulat56",
-        imgSrc:"/images/Daulat.jpeg"
+        imgSrc:"/images/Daulat.png"
     },
     {
         id : "02",
@@ -49,7 +49,7 @@ const mentors = [
         Achivement2 : "Enthusiast in Mathematics",
         Achivement3 : "FrontEnd Development",
         github_link : "https://github.com/hemant935",
-        imgSrc:"/images/Hemant.jpeg"
+        imgSrc:"/images/Hemant.png"
     },
     {
         id : "06",
