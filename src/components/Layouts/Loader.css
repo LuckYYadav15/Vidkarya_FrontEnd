@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.loading-wrapper{
+    
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.book{
+    position: absolute;
+    top:50%;
+    left:55%;
+    transform: translate(-45%,-50%);
+}
+
+
+.cover-page{
+    position: absolute;
+    background-color: rgb(61, 59, 59);
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 10px 10px 0px;
+    transform-origin: left;
+    box-sizing: border-box;
+    /* animation: forcover 16s forwards ease-out infinite; */
+}
+.cover-page-two{
+    background-color:rgb(61, 59, 59);
+    /* z-index: -99; */
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 10px 10px 0px;
+    transform-origin: left;
+    box-sizing: border-box;
+    animation: fortoppage 1s ease-in forwards;
+    animation-delay: 0s;
+}
+.pages{
+    --pg-height:190px;
+    --pg-width:190px;
+    position: absolute;
+    background-color: rgb(240, 232, 125);
+    width: var(--pg-width);
+    height: var(--pg-height);
+    top: 4px; 
+    border-radius: 0px 10px 10px 0px;
+    transform-origin: left;
+    box-sizing: border-box;
+    animation: forpages 8s ease-in-out infinite;
+    border: 1.5px solid black;
+    display: flex;
+}
+@media screen  and (min-width:550px) and (max-width:800px){
+    .book{    
+        transform: translate(-15%,-50%);
+    }
+}
+@media screen and (max-width:550px){
+    .pages{
+        --pg-height:120px;
+        --pg-width:120px;
+        top:0px;
+    }
+    .cover-page,.cover-page-two{
+        width: 120px;
+        height: 120px;
+    }
+    h2{
+        bottom: -30%;
+    }
+    .book{
+        transform: translate(-20%,-50%);
+    }
+}
+
+.pages>div{
+    width: calc(var(--pg-width) - 10px);
+    height: calc(var(--pg-height) - 10px);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.pages .lines{
+    border-bottom: 2px solid black;
+    width: 90%;
+    height: 1px;
+}
+.pages div::before{
+    content: '';
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.mos.cms.futurecdn.net%2FxDGQ9dbLmMpeEqhiWayMRB-320-80.jpg&imgrefurl=https%3A%2F%2Fwww.creativebloq.com%2Fnews%2Fnew-mcdonalds-logo&tbnid=kZVY7tvErAu_tM&vet=10CAMQxiAoAGoXChMI8N274oiQ9gIVAAAAAB0AAAAAEAc..i&docid=ZPOqP6L3TAIhOM&w=320&h=180&itg=1&q=mcdonalds%20logo&client=firefox-b-d&ved=0CAMQxiAoAGoXChMI8N274oiQ9gIVAAAAAB0AAAAAEAc');
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:10px;
+    left:40%;
+}
+@keyframes fortoppage{
+    0%{transform: rotateY(-180deg); z-index: -1;}
+    100%{transform: rotateY(-180deg); z-index: -1;}
+} 
+@keyframes forpages {
+    0%{z-index: 999;}
+    20%{transform: rotateY(-180deg); z-index: 1;}
+    90%{transform: rotateY(-180deg);}
+    91%{transform: rotateY(0deg);}
+    100%{transform: rotateY(0deg);}
+    /* 100%{transform: rotateY(0deg);} */
+}
+
+
+/* @keyframes fortoppage{
+    30%{z-index: 999;}
+    60%{transform: rotateY(-90deg);z-index: 999;}
+    100%{transform: rotateY(-180deg); z-index: -1;}
+}
+@keyframes forpages{
+    0%{transform: rotateY(-90deg);z-index: 999;}
+    70% {transform: rotateY(-180deg);z-index: 4;}
+    100%{transform: rotateY(-360deg);}
+}
+@keyframes forcover{
+    70% {z-index: 999;}
+    80%{transform: rotateY(-90deg);z-index: 999;}
+    100% {transform: rotateY(-180deg); z-index: 999;}
+} */
+/* .pages:nth-of-type(1){
+    animation-delay: 0.5s;
+} */
+.pages:nth-of-type(2){
+    animation-delay: 1s;
+}
+.pages:nth-of-type(3){
+    animation-delay: 2s;
+}
+.pages:nth-of-type(4){
+    animation-delay: 3s;
+}
+.pages:nth-of-type(5){
+    animation-delay: 4s;
+}
+.pages:nth-of-type(6){
+    animation-delay: 5s;
+}
+.pages:nth-of-type(7){
+    animation-delay: 6s;
+}
+.pages:nth-of-type(8){
+    animation-delay: 7s;
+}
+.pages:nth-of-type(9){
+    animation-delay: 8s;
+}
+/* .pages:nth-of-type(10){
+    animation-delay: 9s;
+}
+.pages:nth-of-type(11){
+    animation-delay: 10s;
+}
+.pages:nth-of-type(12){
+    animation-delay: 11s;
+}
+.pages:nth-of-type(13){
+    animation-delay: 5.5s;
+}
+.pages:nth-of-type(14){
+    animation-delay: 6s;
+}
+.pages:nth-of-type(15){
+    animation-delay: 6.5s;
+} */
