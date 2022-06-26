@@ -4,7 +4,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Auth.css";
 import axios from "axios";
-// import { signInwithGoogle } from "../../auth/google_auth";
+import { signInwithGoogle } from "../../auth/google_auth";
+import Loader from "../Layouts/Loader";
 
 export default function Auth() {
 
@@ -17,6 +18,8 @@ export default function Auth() {
     }
   }, []);
   
+  const [loading, setloading] = useState(false);
+
   const [loginBg, setloginBg] = useState("");
   
 
@@ -36,13 +39,13 @@ export default function Auth() {
     const val = e.target.value;
     const name = e.target.name;
 
-    setuserLoginInfo({...userLoginInfo, [name]: val });
+    setuserLoginInfo({ ...userLoginInfo, [name]: val });
   };
 
   const handleSignupChange = (e) => {
     const val = e.target.value;
     const name = e.target.name;
-    setuserSignupInfo({...userSignupInfo, [name]: val });
+    setuserSignupInfo({ ...userSignupInfo, [name]: val });
   };
 
   //login data post to backend
@@ -57,18 +60,24 @@ export default function Auth() {
       return;
     }
     try {
+      setloading(true);
+
       const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/login", {
         email,
         password,
       });
       console.log(res);
+      setloading(false);
+
       if (res) {
         localStorage.setItem("userInfo", JSON.stringify(res.data));
         navigate("/");
         toast.success(" login successful !!!! ");
       }
     } catch (error) {
-      toast.error("wrong credentials error in verfication try again !!!! ");
+      setloading(false);
+
+      toast.error("wrong credencials /error in varication try again !!!! ");
     }
   };
 
@@ -95,17 +104,20 @@ export default function Auth() {
 
     try {
 
+      setloading(true);
       const res = await axios.post("https://vidkarya-backend-98.herokuapp.com/user/sign_up", {
         userName,
         email,
         password,
         confirmPassword,
       });
+      setloading(false);
+
 
       if (res) {
         console.log(res);
         toast.info(
-          "sent the verification email to your registered email address !!"
+          "sent the varification email to your registered email address !!"
         );
         setuserSignupInfo({
           userName: "",
@@ -115,6 +127,8 @@ export default function Auth() {
         });
       }
     } catch (error) {
+      setloading(false);
+
       toast.error("error in sign up!!");
 
       console.log("error in sign in!", error.message);
@@ -131,19 +145,18 @@ export default function Auth() {
     }
 
     try {
-      // console.log("Hello");
       const {data} = await axios.post("https://vidkarya-backend-98.herokuapp.com/Forgot_Password/email_verify" ,{
         email:userLoginInfo.email
       })
-      
+
       if(data){
-        toast.info("verification mail sent to your registered email address!!");
+        toast.info("varification mail sent to your registered email address!!");
       }else{
-      toast.error("error in verification!!");
+      toast.error("error in varification!!");
 
       }
     } catch (error) {
-      toast.error("error in verification!!");
+      toast.error("error in varification!!");
       console.log(error.message);
       
     }
@@ -153,6 +166,9 @@ export default function Auth() {
 
   return (
     <>
+    {loading ? (
+      <Loader />
+    ) : (
       <section className="auth-section">
         <div className="box auth-box">
           <div className="square" />
@@ -162,12 +178,12 @@ export default function Auth() {
           <div className="square" />
           <div className="container-box">
             <div className="container-fluid">
-              {/* <img
+              <img
                 src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
                 alt=""
                 width="65"
                 className="web-icon d-inline-block align-text-top"
-              /> */}
+              />
               <a className="heading navbar-brand ms-1" id="brandtext" href="">
                 <div id="brand-name" href="#first-page">
                   <p>Vidkarya</p>
@@ -289,8 +305,8 @@ export default function Auth() {
             </div>
           </div>
         </div>
-      </section>
-      <ToastContainer position="top-center" />
+        <ToastContainer position="top-center" />
+      </section>)}
     </>
   );
 }
