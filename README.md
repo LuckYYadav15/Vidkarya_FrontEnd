@@ -1,8 +1,4 @@
 <h1> Vidkarya </h1>
-IIIT Dharwad
-Sattur Road
-Karnataka
-Vidkarya Website
 Vidkarya is a college based learning platform built to meet the most demanding needs of
 college students having well-configured resources that will boost your learning. We will be
 providing you with everything needed, from notes to mentors for solving academic queries. So, if
