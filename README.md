@@ -4,9 +4,9 @@ college students having well-configured resources that will boost your learning.
 providing you with everything needed, from notes to mentors for solving academic queries. So, if
 you want to excel at multidisciplinary aspects, Vidkarya will empower you.
 <h2>MISSION</h2>
-● To emphasize on Coloborative skill and projects.
-● To expand further in Engineering Colleges.
-● To bridge the gap between students using Mentorship
+● To emphasize on Coloborative skill and projects.<br/>
+● To expand further in Engineering Colleges.<br/>
+● To bridge the gap between students using Mentorship.<br/>
 <h2>VISION</h2>
 ● To be a Global platform which supports college students
 <h2>THE PROBLEM</h2>
